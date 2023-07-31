@@ -1,7 +1,3 @@
-export const add = (a: number, b: number) => {
-  return a + b;
-};
+import eslintReact from "./src/eslint.react";
 
-export function test() {
-  console.log("test");
-}
+export { eslintReact };
