@@ -3,17 +3,18 @@ import { Linter } from "eslint";
 const config: Linter.Config = {
   extends: [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
     "plugin:unicorn/recommended",
+    "next/core-web-vitals",
     // This disables the formatting rules in ESLint that Prettier is going to be responsible for handling.
     // Make sure it's always the last config, so it gets the chance to override other configs.
     "prettier",
   ],
-  settings: {},
   rules: {
-    "react/prop-types": 0, // use zod if you need runtime validation
+    curly: "error",
     "@typescript-eslint/naming-convention": [
       "error",
       {
@@ -21,8 +22,10 @@ const config: Linter.Config = {
         format: ["PascalCase"],
       },
     ],
+    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+    "react/prop-types": "off", // use zod if you need runtime validation
     "unused-imports/no-unused-imports-ts": "error",
-    "unicorn/no-abusive-eslint-disable": 0,
+    "unicorn/no-abusive-eslint-disable": "off",
     "unicorn/filename-case": [
       "error",
       {

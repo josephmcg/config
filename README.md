@@ -1,4 +1,3 @@
-# Test
+# @josephmcg/config
 
-adding this to determine how changesets will handle it
-test
+eslint and prettier config
