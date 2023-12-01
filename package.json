@@ -1,38 +1,38 @@
 {
-  "name": "heartland",
-  "description": "A collection of various config files",
+  "name": "@josephmcg/config",
+  "description": "A collection of config files to streamline project scaffolding",
   "repository": {
     "type": "git",
-    "url": "https://github.com/josephmcg/heartland.git"
+    "url": "https://github.com/josephmcg/config.git"
   },
+  "type": "module",
   "license": "MIT",
   "version": "0.0.2",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
     "release": "pnpm run build && changeset publish",
-    "lint": "tsc"
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.2",
-    "@types/eslint": "^8.44.0",
-    "@types/prettier": "^2.7.3",
-    "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "@typescript-eslint/parser": "^6.1.0",
-    "eslint": "^8.45.0",
-    "eslint-config-next": "^13.4.12",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-react": "^7.33.0",
-    "eslint-plugin-unicorn": "^48.0.0",
+    "@changesets/cli": "^2.27.1",
+    "@types/eslint": "^8.44.8",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "^14.0.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-unicorn": "^49.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
-    "prettier": "^3.0.0",
-    "prettier-plugin-tailwindcss": "^0.4.1",
-    "stylelint": "^15.10.2",
-    "tsup": "^7.1.0",
-    "typescript": "^5.1.6"
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "stylelint": "^15.11.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2"
   }
 }

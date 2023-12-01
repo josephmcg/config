@@ -1,10 +1,9 @@
-import type { Linter } from "eslint";
+import { Linter } from "eslint";
 
 const config: Linter.Config = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:unicorn/recommended",
@@ -12,18 +11,7 @@ const config: Linter.Config = {
     // Make sure it's always the last config, so it gets the chance to override other configs.
     "prettier",
   ],
-  globals: {
-    React: "readonly",
-  },
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 12,
-    sourceType: "module",
-  },
-  plugins: ["@typescript-eslint"],
+  settings: {},
   rules: {
     "react/prop-types": 0, // use zod if you need runtime validation
     "@typescript-eslint/naming-convention": [
@@ -48,11 +36,6 @@ const config: Linter.Config = {
         ignore: ["\\.*", /^ignore/i],
       },
     ],
-  },
-  settings: {
-    react: {
-      version: "detect",
-    },
   },
 };
 

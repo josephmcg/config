@@ -1,6 +1,5 @@
-import { Options } from "prettier";
-
-const config: Options = {
+/** @type {import("prettier").Config} */
+const config = {
   arrowParens: "always",
   printWidth: 80,
   singleQuote: false,

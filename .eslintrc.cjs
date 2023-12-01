@@ -1,5 +1,5 @@
 /** @type {import("eslint").Linter.Config} */
-export default {
+const config = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -8,3 +8,5 @@ export default {
     "prettier",
   ],
 };
+
+export default config;
