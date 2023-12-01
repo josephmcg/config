@@ -1,5 +1,6 @@
+/* eslint-env node */
 /** @type {import("eslint").Linter.Config} */
-const config = {
+module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -7,6 +8,7 @@ const config = {
     // Make sure it's always the last config, so it gets the chance to override other configs.
     "prettier",
   ],
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
+  root: true,
 };
-
-export default config;

@@ -21,8 +21,7 @@ const config: Linter.Config = {
         format: ["PascalCase"],
       },
     ],
-    "@typescript-eslint/no-unused-vars": "off", // turned off as unused-imports will handle this
-    "unused-imports/no-unused-imports-ts": "error", // enforce no unused imports
+    "unused-imports/no-unused-imports-ts": "error",
     "unicorn/no-abusive-eslint-disable": 0,
     "unicorn/filename-case": [
       "error",

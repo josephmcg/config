@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "release": "pnpm run build && changeset publish",
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
