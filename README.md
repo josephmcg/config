@@ -6,6 +6,6 @@
 
 1. Install @josephmcg/config:
 
-   ```shell
+   ```bash
    pnpm i -D @josephmcg/config
    ```
