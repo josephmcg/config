@@ -1,13 +1,13 @@
-import { Options } from "prettier";
+import { Options } from 'prettier'
 
 const config: Options = {
-  arrowParens: "always",
+  arrowParens: 'always',
   printWidth: 80,
   singleQuote: false,
   jsxSingleQuote: false,
   semi: true,
-  trailingComma: "all",
+  trailingComma: 'all',
   tabWidth: 2,
-};
+}
 
-export default config;
+export default config

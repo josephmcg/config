@@ -1,5 +1,5 @@
-import eslintNext from "./eslint.next";
-import eslintReact from "./eslint.react";
-import prettierConfig from "./prettier";
+import eslintNext from './eslint.next'
+import eslintReact from './eslint.react'
+import prettierConfig from './prettier'
 
-export { eslintNext, eslintReact, prettierConfig };
+export { eslintNext, eslintReact, prettierConfig }
