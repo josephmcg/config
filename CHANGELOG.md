@@ -1,5 +1,11 @@
 # heartland
 
+## 0.2.0
+
+### Minor Changes
+
+- dc1f64a: switch lint deps to prod, since this will be installed as a dev dep
+
 ## 0.1.1
 
 ### Patch Changes
