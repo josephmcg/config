@@ -1,5 +1,12 @@
 # heartland
 
+## 0.1.1
+
+### Patch Changes
+
+- ec36d13: adjust prettier config
+- d7c404e: bump eslint
+
 ## 0.1.0
 
 ### Minor Changes
