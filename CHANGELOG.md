@@ -1,5 +1,11 @@
 # heartland
 
+## 0.3.1
+
+### Patch Changes
+
+- 9744175: truly change prettier config package ;)
+
 ## 0.3.0
 
 ### Minor Changes
