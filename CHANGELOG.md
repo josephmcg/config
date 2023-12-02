@@ -1,5 +1,11 @@
 # heartland
 
+## 0.3.0
+
+### Minor Changes
+
+- b538cd6: adjust prettier config
+
 ## 0.2.0
 
 ### Minor Changes
