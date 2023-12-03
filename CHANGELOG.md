@@ -1,5 +1,15 @@
 # heartland
 
+## 0.4.0
+
+### Minor Changes
+
+- ffeec4d: tweak eslint config, remove unused dep"
+
+### Patch Changes
+
+- 5540bba: bump eslint config prettier
+
 ## 0.3.1
 
 ### Patch Changes
