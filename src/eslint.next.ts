@@ -24,8 +24,6 @@ const config: Linter.Config = {
     ],
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'react/prop-types': 'off', // use zod if you need runtime validation
-    'unused-imports/no-unused-imports-ts': 'error',
-    'unicorn/no-abusive-eslint-disable': 'off',
     'unicorn/filename-case': [
       'error',
       {
