@@ -1,5 +1,11 @@
 # heartland
 
+## 0.4.1
+
+### Patch Changes
+
+- 05bd43f: bump deps
+
 ## 0.4.0
 
 ### Minor Changes
