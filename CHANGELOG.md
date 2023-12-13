@@ -1,5 +1,11 @@
 # heartland
 
+## 0.4.2
+
+### Patch Changes
+
+- de914a8: upgrade linting deps
+
 ## 0.4.1
 
 ### Patch Changes
