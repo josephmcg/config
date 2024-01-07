@@ -1,5 +1,11 @@
 # heartland
 
+## 0.4.4
+
+### Patch Changes
+
+- 60fcbe7: bump eslint
+
 ## 0.4.3
 
 ### Patch Changes
