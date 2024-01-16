@@ -1,7 +1,7 @@
 ---
-"@josephmcg/eslint-config-next": patch
-"@josephmcg/eslint-config-react": patch
-"@josephmcg/prettier-config": patch
+'@josephmcg/eslint-config-next': patch
+'@josephmcg/eslint-config-react': patch
+'@josephmcg/prettier-config': patch
 ---
 
 initial release
