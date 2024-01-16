@@ -1,5 +1,15 @@
 # heartland
 
+## 0.5.0
+
+### Minor Changes
+
+- b778891: refactor: consolidate shared react rules
+
+### Patch Changes
+
+- 60fcbe7: bump eslint
+
 ## 0.4.3
 
 ### Patch Changes
