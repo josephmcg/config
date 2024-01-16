@@ -1,4 +1,3 @@
-/* eslint-env node */
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: [
@@ -10,5 +9,7 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  root: true,
+  env: {
+    node: true,
+  },
 }
