@@ -1,8 +1,9 @@
 import { Linter } from 'eslint'
 
-import rules from './shared.react'
+import shared from '../../shared/eslint-react'
 
 const config: Linter.Config = {
+  ...shared,
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -26,7 +27,6 @@ const config: Linter.Config = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
-  rules,
   settings: {
     react: {
       version: 'detect',
