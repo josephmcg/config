@@ -13,6 +13,7 @@ const config: Linter.Config = {
     // Make sure it's always the last config, so it gets the chance to override other configs.
     'prettier',
   ],
+  plugins: ['@typescript-eslint'],
 }
 
 export default config
