@@ -1,5 +1,7 @@
 import { Linter } from 'eslint'
 
+import rules from './shared.react'
+
 const config: Linter.Config = {
   extends: [
     'eslint:recommended',
@@ -24,30 +26,7 @@ const config: Linter.Config = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
-  rules: {
-    curly: 'error',
-    '@typescript-eslint/naming-convention': [
-      'error',
-      {
-        selector: 'enum',
-        format: ['PascalCase'],
-      },
-    ],
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-    'react/prop-types': 'off', // use zod if you need runtime validation
-    'unicorn/filename-case': [
-      'error',
-      {
-        cases: { camelCase: true, pascalCase: true, kebabCase: true },
-      },
-    ],
-    'unicorn/prevent-abbreviations': [
-      'error',
-      {
-        ignore: ['\\.*', /^ignore/i],
-      },
-    ],
-  },
+  rules,
   settings: {
     react: {
       version: 'detect',
