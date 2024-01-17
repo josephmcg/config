@@ -1,5 +1,8 @@
 # @josephmcg/config
 
+[![CI](https://github.com/josephmcg/config/actions/workflows/main.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/main.yml)
+[![Publish](https://github.com/josephmcg/config/actions/workflows/publish.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/publish.yml)
+
 ## Usage
 
 Import the specific package you are interested in and configure accordingly:
