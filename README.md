@@ -1,45 +1,67 @@
 # @josephmcg/config
 
-[![npm version](https://badge.fury.io/js/@josephmcg%2Fconfig.svg)](https://badge.fury.io/js/@josephmcg%2Fconfig)
-
 ## Usage
 
-Install @josephmcg/config:
+Import the specific package you are interested in and configure accordingly:
+
+### prettier
+
+[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
 
 ```bash
-pnpm i -D @josephmcg/config
+pnpm i -D @josephmcg/prettier-config
 ```
 
-Import the config in your project:
-
-### prettier.mjs
+.prettierrc.mjs (or any prettier config file that is ESM)
 
 ```ts
-import { prettierConfig } from '@josephmcg/config'
+import baseConfig from '@josephmcg/prettier-config'
 
 /** @type {import("prettier").Config} */
 const config = {
-  ...prettierConfig,
+  ...baseConfig,
   // your additional rules
 }
 
 export default config
 ```
 
-### .eslintrc.cjs
+### eslint
+
+.eslintrc.cjs (eslint only supports cjs for now, I will switch to ESM when I can)
+
+#### next
+
+[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-next)](https://www.npmjs.com/package/@josephmcg/eslint-config-next)
+
+```bash
+pnpm i -D @josephmcg/eslint-config-next
+```
 
 ```ts
-const eslintReact = require('@josephmcg/config').eslintReact
-const eslintNext = require('@josephmcg/config').eslintNext
+const baseConfig = require('@josephmcg/eslint-config-next').default
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  ...eslintReact,
+  ...baseConfig,
   // your additional rules
 }
+```
 
+#### react
+
+[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-react)](https://www.npmjs.com/package/@josephmcg/eslint-config-react)
+
+```bash
+pnpm i -D @josephmcg/eslint-config-react
+```
+
+```ts
+const baseConfig = require('@josephmcg/eslint-config-react').default
+
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
-  ...eslintNext,
+  ...baseConfig,
   // your additional rules
 }
 ```
