@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    /* If NOT transpiling with TypeScript: */
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "noEmit": true,
+
+    /* If your code runs in the DOM: */
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+    /* React specific */
+    "jsx": "preserve"
+  }
+}

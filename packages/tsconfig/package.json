@@ -1,0 +1,16 @@
+{
+  "name": "@josephmcg/tsconfig",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josephmcg/config.git"
+  },
+  "files": [
+    "*.json",
+    "!base.json"
+  ],
+  "scripts": {
+    "release": "pnpm changeset publish"
+  }
+}
