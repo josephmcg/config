@@ -23,7 +23,7 @@
     "declaration": true,
 
     /* If your code doesn't run in the DOM: */
-    "lib": ["ES2022"]
+    "lib": ["ES2022"],
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist"],
 }
