@@ -1,5 +1,11 @@
 # @josephmcg/tsconfig
 
+## 0.0.3
+
+### Patch Changes
+
+- bbf2a94: fix tsconfig
+
 ## 0.0.2
 
 ### Patch Changes
