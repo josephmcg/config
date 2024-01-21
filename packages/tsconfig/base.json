@@ -13,7 +13,6 @@
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
-    "forceConsistentCasingInFileNames": true,
-  },
-  "exclude": ["node_modules"],
+    "forceConsistentCasingInFileNames": true
+  }
 }
