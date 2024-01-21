@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "./base.json",
   "compilerOptions": {
     /* If transpiling with TypeScript: */
     "moduleResolution": "NodeNext",
