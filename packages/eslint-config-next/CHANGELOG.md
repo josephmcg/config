@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.7
+
+### Patch Changes
+
+- a00e7f9: adjust esm and cjs config
+
 ## 0.0.6
 
 ### Patch Changes
