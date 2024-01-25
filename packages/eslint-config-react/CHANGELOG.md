@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.5
+
+### Patch Changes
+
+- 899c8da: test changesets
+
 ## 0.0.4
 
 ### Patch Changes
