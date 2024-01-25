@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.7
+
+### Patch Changes
+
+- 27c4bb1: adjust esm and cjs
+
 ## 0.0.6
 
 ### Patch Changes
