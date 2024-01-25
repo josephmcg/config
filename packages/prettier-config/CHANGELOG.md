@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 0.0.4
+
+### Patch Changes
+
+- a00e7f9: adjust esm and cjs config
+
 ## 0.0.3
 
 ### Patch Changes
