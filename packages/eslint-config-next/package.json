@@ -7,7 +7,6 @@
     "url": "https://github.com/josephmcg/config.git",
     "directory": "packages/eslint-config-next"
   },
-  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
