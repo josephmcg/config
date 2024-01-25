@@ -7,7 +7,7 @@
 
 Import the specific package you are interested in and configure accordingly:
 
-### prettier
+## prettier
 
 [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
 
@@ -29,11 +29,29 @@ const config = {
 export default config
 ```
 
-### eslint
+## eslint
 
 .eslintrc.cjs (eslint only supports cjs for now, I will switch to ESM when I can)
 
-#### next
+### react
+
+[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-react)](https://www.npmjs.com/package/@josephmcg/eslint-config-react)
+
+```bash
+pnpm i -D @josephmcg/eslint-config-react
+```
+
+```ts
+const baseConfig = require('@josephmcg/eslint-config-react').default
+
+/** @type {import("eslint").Linter.Config} */
+module.exports = {
+  ...baseConfig,
+  // your additional rules
+}
+```
+
+### next
 
 [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-next)](https://www.npmjs.com/package/@josephmcg/eslint-config-next)
 
@@ -51,20 +69,39 @@ module.exports = {
 }
 ```
 
-#### react
+## tsconfig
 
-[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-react)](https://www.npmjs.com/package/@josephmcg/eslint-config-react)
+[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Ftsconfig)](https://www.npmjs.com/package/@josephmcg/tsconfig)
 
 ```bash
-pnpm i -D @josephmcg/eslint-config-react
+pnpm i -D @josephmcg/tsconfig
 ```
 
-```ts
-const baseConfig = require('@josephmcg/eslint-config-react').default
+tsconfig.json
 
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  ...baseConfig,
-  // your additional rules
+### react
+
+```json
+{
+  "extends": "@josephmcg/tsconfig/react.json",
+  ...
+}
+```
+
+### next
+
+```json
+{
+  "extends": "@josephmcg/tsconfig/next.json",
+  ...
+}
+```
+
+### node
+
+```json
+{
+  "extends": "@josephmcg/tsconfig/node.json",
+  ...
 }
 ```
