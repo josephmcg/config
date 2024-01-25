@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "tsup index.ts --format cjs,esm --dts",
+    "build": "tsup",
     "release": "pnpm run build && changeset publish"
   },
   "dependencies": {
