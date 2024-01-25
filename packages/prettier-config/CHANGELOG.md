@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 0.0.3
+
+### Patch Changes
+
+- 899c8da: test changesets
+
 ## 0.0.2
 
 ### Patch Changes
