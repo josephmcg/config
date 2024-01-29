@@ -26,7 +26,6 @@ const config: Linter.Config = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint'],
   settings: {
     react: {
       version: 'detect',

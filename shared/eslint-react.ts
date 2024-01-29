@@ -1,6 +1,7 @@
 import { Linter } from 'eslint'
 
 const config: Linter.Config = {
+  plugins: ['@typescript-eslint', 'simple-import-sort'],
   rules: {
     curly: 'error',
     '@typescript-eslint/naming-convention': [
@@ -24,6 +25,8 @@ const config: Linter.Config = {
         ignore: ['\\.*', /^ignore/i],
       },
     ],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
 }
 
