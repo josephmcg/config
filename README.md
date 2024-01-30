@@ -3,9 +3,15 @@
 [![CI](https://github.com/josephmcg/config/actions/workflows/main.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/main.yml)
 [![Publish](https://github.com/josephmcg/config/actions/workflows/publish.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/publish.yml)
 
-## Usage
-
-Import the specific package you are interested in and configure accordingly:
+- [@josephmcg/config](#josephmcgconfig)
+  - [prettier](#prettier)
+  - [eslint](#eslint)
+    - [react](#react)
+    - [next](#next)
+  - [tsconfig](#tsconfig)
+    - [react](#react-1)
+    - [next](#next-1)
+    - [node](#node)
 
 ## prettier
 
