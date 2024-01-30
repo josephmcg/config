@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.11
+
+### Patch Changes
+
+- a0f85a9: fix default export so config can be easily extended
+
 ## 0.0.10
 
 ### Patch Changes
