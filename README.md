@@ -29,7 +29,7 @@ import baseConfig from '@josephmcg/prettier-config'
 /** @type {import("prettier").Config} */
 const config = {
   ...baseConfig,
-  // your additional rules
+  // additional config
 }
 
 export default config
@@ -48,12 +48,10 @@ pnpm i -D @josephmcg/eslint-config-react
 ```
 
 ```ts
-const baseConfig = require('@josephmcg/eslint-config-react').default
-
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  ...baseConfig,
-  // your additional rules
+  extends: '@josephmcg/eslint-config-react',
+  // additional config
 }
 ```
 
@@ -66,12 +64,10 @@ pnpm i -D @josephmcg/eslint-config-next
 ```
 
 ```ts
-const baseConfig = require('@josephmcg/eslint-config-next').default
-
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  ...baseConfig,
-  // your additional rules
+  extends: '@josephmcg/eslint-config-next',
+  // additional config
 }
 ```
 
