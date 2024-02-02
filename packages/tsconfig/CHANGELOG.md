@@ -1,5 +1,11 @@
 # @josephmcg/tsconfig
 
+## 0.0.5
+
+### Patch Changes
+
+- d40eb3c: add json schema to tsconfig
+
 ## 0.0.4
 
 ### Patch Changes
