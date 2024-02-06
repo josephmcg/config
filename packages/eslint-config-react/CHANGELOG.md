@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.13
+
+### Patch Changes
+
+- f2f1cfe: fix unused import plugin dependency
+
 ## 0.0.12
 
 ### Patch Changes
