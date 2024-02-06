@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.12
+
+### Patch Changes
+
+- 8d9ca64: add eslint plugin to automatically remove unused imports
+
 ## 0.0.11
 
 ### Patch Changes
