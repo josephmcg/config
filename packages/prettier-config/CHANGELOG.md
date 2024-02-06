@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 0.0.6
+
+### Patch Changes
+
+- faca064: bump prettier deps
+
 ## 0.0.5
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.11
+
+### Patch Changes
+
+- ac7cc11: bump deps
+
 ## 0.0.10
 
 ### Patch Changes
