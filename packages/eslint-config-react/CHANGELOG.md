@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.14
+
+### Patch Changes
+
+- c516265: bump eslint import sort plugin
+
 ## 0.0.13
 
 ### Patch Changes
