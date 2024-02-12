@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.15
+
+### Patch Changes
+
+- 04e4f3f: add astro tsconfig, improve shared react eslint config
+
 ## 0.0.14
 
 ### Patch Changes
