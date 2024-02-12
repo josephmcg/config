@@ -10,7 +10,7 @@
     /* If your code runs in the DOM: */
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
 
-    /* React specific */
+    /* React specific jazz: */
     "jsx": "preserve",
     "incremental": true,
     "plugins": [

@@ -1,6 +1,13 @@
 import { Linter } from 'eslint'
 
 const config: Linter.Config = {
+  ignorePatterns: [
+    '**/package-lock.json',
+    '**/pnpm-lock.yaml',
+    '**/node_modules/**',
+    '**/dist/**',
+    '.next',
+  ],
   plugins: ['@typescript-eslint', 'simple-import-sort', 'unused-imports'],
   rules: {
     curly: 'error',
@@ -11,6 +18,8 @@ const config: Linter.Config = {
         format: ['PascalCase'],
       },
     ],
+    '@typescript-eslint/explicit-function-return-type': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'react/prop-types': 'off', // use zod if you need runtime validation
     'unicorn/filename-case': [
