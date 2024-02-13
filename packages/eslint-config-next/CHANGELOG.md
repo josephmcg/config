@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.17
+
+### Patch Changes
+
+- 1cb9e73: bump linting deps
+
 ## 0.0.16
 
 ### Patch Changes
