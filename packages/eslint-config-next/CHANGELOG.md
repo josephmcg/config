@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.18
+
+### Patch Changes
+
+- b527f8b: bump ts parsing deps
+
 ## 0.0.17
 
 ### Patch Changes
