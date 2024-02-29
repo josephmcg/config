@@ -3,16 +3,6 @@
 [![CI](https://github.com/josephmcg/config/actions/workflows/main.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/main.yml)
 [![Publish](https://github.com/josephmcg/config/actions/workflows/publish.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/publish.yml)
 
-- [@josephmcg/config](#josephmcgconfig)
-  - [prettier](#prettier)
-  - [eslint](#eslint)
-    - [react](#react)
-    - [next](#next)
-  - [tsconfig](#tsconfig)
-    - [react](#react-1)
-    - [next](#next-1)
-    - [node](#node)
-
 ## prettier
 
 [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
@@ -37,7 +27,10 @@ export default config
 
 ## eslint
 
-.eslintrc.cjs (eslint only supports cjs for now, I will switch to ESM when I can)
+> https://github.com/eslint/eslint/issues/18093  
+> eslint flat config is not supported by all plugins, I will switch when I can
+
+.eslintrc.cjs
 
 ### react
 
