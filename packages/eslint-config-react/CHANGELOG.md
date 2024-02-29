@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.19
+
+### Patch Changes
+
+- af66491: move shared extends upstream, add missing a11y plugin
+
 ## 0.0.18
 
 ### Patch Changes
