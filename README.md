@@ -62,7 +62,7 @@ pnpm i -D @josephmcg/tsconfig
 
 ### react
 
-```json
+```jsonc
 // tsconfig.json
 {
   "extends": "@josephmcg/tsconfig/react.json"
@@ -71,7 +71,7 @@ pnpm i -D @josephmcg/tsconfig
 
 ### next
 
-```json
+```jsonc
 // tsconfig.json
 {
   "extends": "@josephmcg/tsconfig/next.json"
@@ -80,7 +80,7 @@ pnpm i -D @josephmcg/tsconfig
 
 ### node
 
-```json
+```jsonc
 // tsconfig.json
 {
   "extends": "@josephmcg/tsconfig/node.json"
