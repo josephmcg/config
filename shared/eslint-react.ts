@@ -1,7 +1,14 @@
 import { Linter } from 'eslint'
 
-const config: Linter.Config = {
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+const config = {
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:unicorn/recommended',
+  ],
   ignorePatterns: [
     '**/package-lock.json',
     '**/pnpm-lock.yaml',
@@ -18,6 +25,7 @@ const config: Linter.Config = {
   ],
   rules: {
     curly: 'error',
+    '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -26,6 +34,7 @@ const config: Linter.Config = {
       },
     ],
     '@typescript-eslint/explicit-function-return-type': 'error',
+    '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'react/prop-types': 'off', // use zod if you need runtime validation
@@ -45,6 +54,6 @@ const config: Linter.Config = {
     'simple-import-sort/exports': 'error',
     'unused-imports/no-unused-imports': 'error',
   },
-}
+} as const satisfies Linter.Config
 
 export default config
