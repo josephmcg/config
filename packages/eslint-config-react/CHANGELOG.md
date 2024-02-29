@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.20
+
+### Patch Changes
+
+- 89c83d9: extend shared config
+
 ## 0.0.19
 
 ### Patch Changes
