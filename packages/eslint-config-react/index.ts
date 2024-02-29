@@ -5,8 +5,6 @@ import shared from '../../shared/eslint-react'
 const config: Linter.Config = {
   ...shared,
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',

@@ -1,6 +1,7 @@
 import { Linter } from 'eslint'
 
 const config: Linter.Config = {
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
   ignorePatterns: [
     '**/package-lock.json',
     '**/pnpm-lock.yaml',
@@ -8,7 +9,13 @@ const config: Linter.Config = {
     '**/dist/**',
     '.next',
   ],
-  plugins: ['@typescript-eslint', 'simple-import-sort', 'unused-imports'],
+  plugins: [
+    '@typescript-eslint',
+    'react',
+    'jsx-a11y',
+    'simple-import-sort',
+    'unused-imports',
+  ],
   rules: {
     curly: 'error',
     '@typescript-eslint/naming-convention': [
