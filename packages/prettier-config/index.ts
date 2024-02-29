@@ -1,6 +1,6 @@
 import { Options } from 'prettier'
 
-const config: Options = {
+export const baseConfig = {
   arrowParens: 'always',
   printWidth: 80,
   singleQuote: true,
@@ -8,6 +8,11 @@ const config: Options = {
   semi: false,
   trailingComma: 'all',
   tabWidth: 2,
-}
+} as const satisfies Options
 
-export default config
+export const tailwindConfig = {
+  ...baseConfig,
+  plugins: ['prettier-plugin-tailwindcss'],
+  tailwindConfig: './tailwind.config.ts',
+  tailwindFunctions: ['clsx'],
+} as const satisfies Options

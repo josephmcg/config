@@ -19,6 +19,7 @@
     "release": "pnpm run build && changeset publish"
   },
   "dependencies": {
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11"
   }
 }

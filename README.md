@@ -24,11 +24,11 @@ pnpm i -D @josephmcg/prettier-config
 .prettierrc.mjs (or any prettier config file that is ESM)
 
 ```ts
-import baseConfig from '@josephmcg/prettier-config'
+import { baseConfig, tailwindConfig } from '@josephmcg/prettier-config'
 
 /** @type {import("prettier").Config} */
 const config = {
-  ...baseConfig,
+  ...baseConfig || ...tailwindConfig,
   // additional config
 }
 
