@@ -6,9 +6,8 @@
 pnpm i -D @josephmcg/prettier-config
 ```
 
-.prettierrc.mjs (or any prettier config file that is ESM)
-
 ```ts
+// .prettierrc.mjs
 import { baseConfig, tailwindConfig } from '@josephmcg/prettier-config'
 
 /** @type {import("prettier").Config} */
@@ -25,15 +24,14 @@ export default config
 > https://github.com/eslint/eslint/issues/18093  
 > eslint flat config is not supported by all plugins, I will switch when I can
 
-.eslintrc.cjs
-
 ### react [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-react)](https://www.npmjs.com/package/@josephmcg/eslint-config-react)
 
 ```bash
 pnpm i -D @josephmcg/eslint-config-react
 ```
 
-```ts
+```cjs
+// .eslintrc.cjs
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: '@josephmcg/eslint-config-react',
@@ -47,7 +45,8 @@ module.exports = {
 pnpm i -D @josephmcg/eslint-config-next
 ```
 
-```ts
+```cjs
+// .eslintrc.cjs
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: '@josephmcg/eslint-config-next',
@@ -61,11 +60,10 @@ module.exports = {
 pnpm i -D @josephmcg/tsconfig
 ```
 
-tsconfig.json
-
 ### react
 
 ```json
+// tsconfig.json
 {
   "extends": "@josephmcg/tsconfig/react.json"
 }
@@ -74,6 +72,7 @@ tsconfig.json
 ### next
 
 ```json
+// tsconfig.json
 {
   "extends": "@josephmcg/tsconfig/next.json"
 }
@@ -82,6 +81,7 @@ tsconfig.json
 ### node
 
 ```json
+// tsconfig.json
 {
   "extends": "@josephmcg/tsconfig/node.json"
 }
