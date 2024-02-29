@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.18
+
+### Patch Changes
+
+- a85fcee: bump eslint
+
 ## 0.0.17
 
 ### Patch Changes
