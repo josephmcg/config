@@ -1,11 +1,6 @@
-# @josephmcg/config
+# @josephmcg/config [![CI](https://github.com/josephmcg/config/actions/workflows/main.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/main.yml) [![Publish](https://github.com/josephmcg/config/actions/workflows/publish.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/publish.yml)
 
-[![CI](https://github.com/josephmcg/config/actions/workflows/main.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/main.yml)
-[![Publish](https://github.com/josephmcg/config/actions/workflows/publish.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/publish.yml)
-
-## prettier
-
-[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
+## prettier [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
 
 ```bash
 pnpm i -D @josephmcg/prettier-config
@@ -32,9 +27,7 @@ export default config
 
 .eslintrc.cjs
 
-### react
-
-[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-react)](https://www.npmjs.com/package/@josephmcg/eslint-config-react)
+### react [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-react)](https://www.npmjs.com/package/@josephmcg/eslint-config-react)
 
 ```bash
 pnpm i -D @josephmcg/eslint-config-react
@@ -48,9 +41,7 @@ module.exports = {
 }
 ```
 
-### next
-
-[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-next)](https://www.npmjs.com/package/@josephmcg/eslint-config-next)
+### next [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-next)](https://www.npmjs.com/package/@josephmcg/eslint-config-next)
 
 ```bash
 pnpm i -D @josephmcg/eslint-config-next
@@ -64,9 +55,7 @@ module.exports = {
 }
 ```
 
-## tsconfig
-
-[![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Ftsconfig)](https://www.npmjs.com/package/@josephmcg/tsconfig)
+## tsconfig [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Ftsconfig)](https://www.npmjs.com/package/@josephmcg/tsconfig)
 
 ```bash
 pnpm i -D @josephmcg/tsconfig
