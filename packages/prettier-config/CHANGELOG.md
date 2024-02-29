@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 0.0.7
+
+### Patch Changes
+
+- e0d0c90: export both base and tailwind configs
+
 ## 0.0.6
 
 ### Patch Changes
