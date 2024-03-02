@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.21
+
+### Patch Changes
+
+- fa6feed: switch to strict typescript eslint rules
+
 ## 0.0.20
 
 ### Patch Changes
