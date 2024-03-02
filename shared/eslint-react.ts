@@ -3,7 +3,7 @@ import { Linter } from 'eslint'
 const config = {
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/strict-type-checked',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
@@ -25,7 +25,7 @@ const config = {
   ],
   rules: {
     curly: 'error',
-    '@typescript-eslint/array-type': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -33,9 +33,6 @@ const config = {
         format: ['PascalCase'],
       },
     ],
-    '@typescript-eslint/explicit-function-return-type': 'error',
-    '@typescript-eslint/no-inferrable-types': 'error',
-    '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'react/prop-types': 'off', // use zod if you need runtime validation
     'unicorn/filename-case': [

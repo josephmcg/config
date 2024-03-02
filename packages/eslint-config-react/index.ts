@@ -18,7 +18,9 @@ const config = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 2022,
+    // following line required for `plugin:@typescript-eslint/strict-type-checked`
+    project: './tsconfig.json',
     sourceType: 'module',
   },
   settings: {
