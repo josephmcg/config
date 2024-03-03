@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.23
+
+### Patch Changes
+
+- 9b82f38: bump eslint next plugin
+
 ## 0.0.22
 
 ### Patch Changes
