@@ -1,5 +1,12 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.24
+
+### Patch Changes
+
+- 8bf5c40: bump eslint deps
+- 5c9fa73: bump deps
+
 ## 0.0.23
 
 ### Patch Changes
