@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.23
+
+### Patch Changes
+
+- eacd318: bump typescript eslint deps"
+
 ## 0.0.22
 
 ### Patch Changes
