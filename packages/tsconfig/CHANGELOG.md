@@ -1,5 +1,11 @@
 # @josephmcg/tsconfig
 
+## 0.0.7
+
+### Patch Changes
+
+- 7e8daa8: include verbatim module syntax by default
+
 ## 0.0.6
 
 ### Patch Changes
