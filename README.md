@@ -2,7 +2,7 @@
 
 This is a collection of packages to speed up project scaffolding, with the added benefit of keeping config aligned between projects.
 
-I built this purely for my own use, but I hope you find it useful too! It's very opinionated, so feel free to fork it and make it your own.
+I built this for personal use, but I hope you find it useful too! It's very opinionated, so feel free to fork it and make it your own.
 
 ## prettier [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
 
@@ -16,7 +16,8 @@ import { baseConfig, tailwindConfig } from '@josephmcg/prettier-config'
 
 /** @type {import("prettier").Config} */
 const config = {
-  ...baseConfig || ...tailwindConfig,
+  ...baseConfig,
+  ...tailwindConfig,
   // additional config
 }
 
