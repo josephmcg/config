@@ -1,5 +1,9 @@
 # @josephmcg/config [![CI](https://github.com/josephmcg/config/actions/workflows/main.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/main.yml) [![Publish](https://github.com/josephmcg/config/actions/workflows/publish.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/publish.yml)
 
+This is a collection of packages to speed up project scaffolding, with the added benefit of keeping config aligned between projects.
+
+I built this purely for my own use, but I hope you find it useful too! It's very opinionated, so feel free to fork it and make it your own.
+
 ## prettier [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
 
 ```bash
@@ -21,7 +25,7 @@ export default config
 
 ## eslint
 
-> https://github.com/eslint/eslint/issues/18093  
+> <https://github.com/eslint/eslint/issues/18093>  
 > eslint flat config is not supported by all plugins, I will switch when I can
 
 ### react [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-react)](https://www.npmjs.com/package/@josephmcg/eslint-config-react)
