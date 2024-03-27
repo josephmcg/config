@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 0.0.9
+
+### Patch Changes
+
+- 2672e4d: add readme to each individual package
+
 ## 0.0.8
 
 ### Patch Changes

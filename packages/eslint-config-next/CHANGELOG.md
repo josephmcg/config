@@ -1,5 +1,12 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.27
+
+### Patch Changes
+
+- 2672e4d: add readme to each individual package
+- 48c43bd: bump typescript eslint
+
 ## 0.0.26
 
 ### Patch Changes
