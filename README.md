@@ -4,25 +4,7 @@ This is a collection of packages to speed up project scaffolding, with the added
 
 I built this for personal use, but I hope you find it useful too! It's very opinionated, so feel free to fork it and make it your own.
 
-## prettier [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
-
-```bash
-pnpm i -D @josephmcg/prettier-config
-```
-
-```ts
-// .prettierrc.mjs
-import { baseConfig, tailwindConfig } from '@josephmcg/prettier-config'
-
-/** @type {import("prettier").Config} */
-const config = {
-  ...baseConfig,
-  ...tailwindConfig,
-  // additional config
-}
-
-export default config
-```
+- [prettier](https://github.com/josephmcg/config/blob/main/packages/prettier-config/README.md)
 
 ## eslint
 
