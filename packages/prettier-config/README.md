@@ -1,4 +1,4 @@
-# prettier [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
+# prettier-config [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)](https://www.npmjs.com/package/@josephmcg/prettier-config)
 
 ```bash
 pnpm i -D @josephmcg/prettier-config
