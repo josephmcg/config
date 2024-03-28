@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.28
+
+### Patch Changes
+
+- 7dd5d59: improve package badges
+
 ## 0.0.27
 
 ### Patch Changes

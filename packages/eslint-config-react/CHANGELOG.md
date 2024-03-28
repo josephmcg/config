@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.26
+
+### Patch Changes
+
+- 7dd5d59: improve package badges
+
 ## 0.0.25
 
 ### Patch Changes

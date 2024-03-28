@@ -1,5 +1,11 @@
 # @josephmcg/tsconfig
 
+## 0.0.9
+
+### Patch Changes
+
+- 7dd5d59: improve package badges
+
 ## 0.0.8
 
 ### Patch Changes

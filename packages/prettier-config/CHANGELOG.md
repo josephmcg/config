@@ -1,5 +1,12 @@
 # @josephmcg/prettier-config
 
+## 0.0.10
+
+### Patch Changes
+
+- 7dd5d59: improve package badges
+- 8c45639: bump tailwind css prettier plugin
+
 ## 0.0.9
 
 ### Patch Changes
