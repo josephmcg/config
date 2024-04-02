@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.29
+
+### Patch Changes
+
+- 2ff007b: bump typescript eslint
+
 ## 0.0.28
 
 ### Patch Changes
