@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.30
+
+### Patch Changes
+
+- 6a79847: bump unicorn plugin
+
 ## 0.0.29
 
 ### Patch Changes
