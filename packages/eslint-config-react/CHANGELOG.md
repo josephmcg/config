@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.30
+
+### Patch Changes
+
+- a46d7a0: bump deps
+
 ## 0.0.29
 
 ### Patch Changes
