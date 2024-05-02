@@ -1,5 +1,12 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.33
+
+### Patch Changes
+
+- 2fa24e9: bump eslint deps
+- 17aaa64: bump nextjs eslint plugin
+
 ## 0.0.32
 
 ### Patch Changes
