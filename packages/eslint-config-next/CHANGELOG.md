@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.34
+
+### Patch Changes
+
+- ce30709: bump eslint unicorn
+
 ## 0.0.33
 
 ### Patch Changes

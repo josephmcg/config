@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.32
+
+### Patch Changes
+
+- ce30709: bump eslint unicorn
+
 ## 0.0.31
 
 ### Patch Changes
