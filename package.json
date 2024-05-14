@@ -15,10 +15,7 @@
     "prepare": "husky",
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint --cache . && prettier . --check",
-    "build": "pnpm run '/^build:.*/'",
-    "build:eslint-config-next": "pnpm --filter eslint-config-next build",
-    "build:eslint-config-react": "pnpm --filter eslint-config-react build",
-    "build:prettier-config": "pnpm --filter prettier-config build",
+    "build": "pnpm -r build",
     "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
