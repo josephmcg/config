@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.37
+
+### Patch Changes
+
+- 720c51f: upgrade deps
+
 ## 0.0.36
 
 ### Patch Changes
