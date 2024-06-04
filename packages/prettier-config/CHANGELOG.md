@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 0.0.12
+
+### Patch Changes
+
+- 720c51f: upgrade deps
+
 ## 0.0.11
 
 ### Patch Changes
