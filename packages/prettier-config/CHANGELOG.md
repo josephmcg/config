@@ -1,5 +1,12 @@
 # @josephmcg/prettier-config
 
+## 0.0.13
+
+### Patch Changes
+
+- ad7dffb: bump tailwind plugin
+- dfc6f8c: bump prettier
+
 ## 0.0.12
 
 ### Patch Changes
