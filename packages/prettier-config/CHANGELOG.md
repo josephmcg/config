@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 0.0.14
+
+### Patch Changes
+
+- 3129621: bump deps
+
 ## 0.0.13
 
 ### Patch Changes
