@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.39
+
+### Patch Changes
+
+- f91fde6: bunp deps
+
 ## 0.0.38
 
 ### Patch Changes
