@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.37
+
+### Patch Changes
+
+- f91fde6: bunp deps
+
 ## 0.0.36
 
 ### Patch Changes

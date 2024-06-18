@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 0.0.15
+
+### Patch Changes
+
+- f91fde6: bunp deps
+
 ## 0.0.14
 
 ### Patch Changes
