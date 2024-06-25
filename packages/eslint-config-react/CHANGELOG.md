@@ -1,5 +1,12 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.38
+
+### Patch Changes
+
+- 4ae6ca3: upgrade deps
+- e6313ae: upgrade deps
+
 ## 0.0.37
 
 ### Patch Changes

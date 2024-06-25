@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.40
+
+### Patch Changes
+
+- e6313ae: upgrade deps
+
 ## 0.0.39
 
 ### Patch Changes
