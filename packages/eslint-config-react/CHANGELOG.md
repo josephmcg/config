@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.39
+
+### Patch Changes
+
+- c3b46ac: bump changesets cli, TS lint deps
+
 ## 0.0.38
 
 ### Patch Changes
