@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.41
+
+### Patch Changes
+
+- c3b46ac: bump changesets cli, TS lint deps
+
 ## 0.0.40
 
 ### Patch Changes
