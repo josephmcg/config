@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 1.0.0
+
+### Major Changes
+
+- 2b8f8c0: major release(!) things are stable enough to warrant it
+
 ## 0.0.15
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @josephmcg/eslint-config-next
 
+## 1.0.0
+
+### Major Changes
+
+- 2b8f8c0: major release(!) things are stable enough to warrant it
+
+### Patch Changes
+
+- d1b70f6: only apply typescript eslint rules to ts files
+
 ## 0.0.42
 
 ### Patch Changes
