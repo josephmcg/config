@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 1.0.0
+
+### Major Changes
+
+- 2b8f8c0: major release(!) things are stable enough to warrant it
+
 ## 0.0.40
 
 ### Patch Changes
