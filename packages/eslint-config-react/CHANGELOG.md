@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 0.0.40
+
+### Patch Changes
+
+- b8ff22e: apply to mjs, mts glob pattern files
+
 ## 0.0.39
 
 ### Patch Changes
