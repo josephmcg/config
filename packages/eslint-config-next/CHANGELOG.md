@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 0.0.42
+
+### Patch Changes
+
+- b8ff22e: apply to mjs, mts glob pattern files
+
 ## 0.0.41
 
 ### Patch Changes
