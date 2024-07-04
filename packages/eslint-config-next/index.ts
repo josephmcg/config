@@ -13,7 +13,7 @@ const config = {
   ],
   overrides: [
     {
-      files: ['**/*.*js?(x)', '**/*.*ts?(x)'],
+      files: ['**/*.*ts?(x)'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         ecmaFeatures: {
