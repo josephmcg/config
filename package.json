@@ -14,16 +14,25 @@
   "scripts": {
     "prepare": "husky",
     "preinstall": "npx only-allow pnpm",
-    "lint": "eslint --cache . && prettier . --check",
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:js": "eslint --cache .",
+    "lint:format": "prettier --cache --check .",
     "build": "pnpm -r build",
     "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
     "@types/eslint": "^8.56.10",
-    "eslint": "8.57.0 < 9.0.0",
     "husky": "^9.0.11",
     "tsup": "^8.1.0",
     "typescript": "^5.5.3"
+  },
+  "pnpm": {
+    "updateConfig": {
+      "ignoreDependencies": [
+        "eslint",
+        "eslint-plugin-unused-imports"
+      ]
+    }
   }
 }
