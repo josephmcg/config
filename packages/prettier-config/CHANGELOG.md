@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 1.0.1
+
+### Patch Changes
+
+- b6437c4: upgrade lint deps
+
 ## 1.0.0
 
 ### Major Changes
