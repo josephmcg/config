@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 1.0.2
+
+### Patch Changes
+
+- 2f732e3: upgrade deps
+
 ## 1.0.1
 
 ### Patch Changes
