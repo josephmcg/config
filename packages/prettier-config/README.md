@@ -11,6 +11,7 @@ import { baseConfig, tailwindConfig } from '@josephmcg/prettier-config'
 /** @type {import("prettier").Config} */
 const config = {
   ...baseConfig,
+  // OR
   ...tailwindConfig,
   // additional config
 }
