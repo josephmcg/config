@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 1.0.3
+
+### Patch Changes
+
+- d83ed5d: bump eslint unicorn
+
 ## 1.0.2
 
 ### Patch Changes
