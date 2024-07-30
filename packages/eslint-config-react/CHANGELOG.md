@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 1.0.5
+
+### Patch Changes
+
+- c5ddbe1: bump typescript eslint deps
+
 ## 1.0.4
 
 ### Patch Changes

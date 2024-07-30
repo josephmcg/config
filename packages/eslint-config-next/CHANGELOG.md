@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 1.0.4
+
+### Patch Changes
+
+- c5ddbe1: bump typescript eslint deps
+
 ## 1.0.3
 
 ### Patch Changes
