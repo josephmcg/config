@@ -24,7 +24,7 @@
     "@changesets/cli": "^2.27.7",
     "@types/eslint": "^8.56.10",
     "husky": "^9.1.4",
-    "tsup": "^8.2.3",
+    "tsup": "^8.2.4",
     "typescript": "^5.5.4"
   },
   "pnpm": {
