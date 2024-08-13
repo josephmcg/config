@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 1.0.2
+
+### Patch Changes
+
+- 7e34b65: bump tailwind deps
+
 ## 1.0.1
 
 ### Patch Changes
