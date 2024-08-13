@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
-    "@types/eslint": "^9.6.0",
+    "@types/eslint": "8.56.11",
     "husky": "^9.1.4",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4"
@@ -31,7 +31,8 @@
     "updateConfig": {
       "ignoreDependencies": [
         "eslint",
-        "eslint-plugin-unused-imports"
+        "eslint-plugin-unused-imports",
+        "@types/eslint"
       ]
     }
   }
