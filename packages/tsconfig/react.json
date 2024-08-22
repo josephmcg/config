@@ -4,7 +4,7 @@
   "compilerOptions": {
     /* If NOT transpiling with TypeScript: */
     "moduleResolution": "Bundler",
-    "module": "ESNext",
+    "module": "Preserve",
     "noEmit": true,
 
     /* If your code runs in the DOM: */
