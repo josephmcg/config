@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 1.0.5
+
+### Patch Changes
+
+- 76b6f00: upgrade deps, adjust tsconfig
+
 ## 1.0.4
 
 ### Patch Changes
