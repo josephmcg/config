@@ -1,5 +1,11 @@
 # @josephmcg/tsconfig
 
+## 1.0.1
+
+### Patch Changes
+
+- 76b6f00: upgrade deps, adjust tsconfig
+
 ## 1.0.0
 
 ### Major Changes
