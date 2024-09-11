@@ -41,12 +41,7 @@ const config = {
         cases: { camelCase: true, pascalCase: true, kebabCase: true },
       },
     ],
-    'unicorn/prevent-abbreviations': [
-      'error',
-      {
-        ignore: ['\\.*', /^ignore/i],
-      },
-    ],
+    'unicorn/prevent-abbreviations': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
     'unused-imports/no-unused-imports': 'error',
