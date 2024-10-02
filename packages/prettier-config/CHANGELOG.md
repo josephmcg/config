@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 1.0.3
+
+### Patch Changes
+
+- 13fab49: bump deps
+
 ## 1.0.2
 
 ### Patch Changes

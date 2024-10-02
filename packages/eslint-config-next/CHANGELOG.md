@@ -1,5 +1,12 @@
 # @josephmcg/eslint-config-next
 
+## 1.0.8
+
+### Patch Changes
+
+- 13fab49: bump deps
+- 4055577: bump eslint next plugin
+
 ## 1.0.7
 
 ### Patch Changes
