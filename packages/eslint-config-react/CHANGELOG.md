@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 1.0.9
+
+### Patch Changes
+
+- 8ab148a: bump deps
+
 ## 1.0.8
 
 ### Patch Changes
