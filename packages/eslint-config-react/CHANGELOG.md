@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 1.0.10
+
+### Patch Changes
+
+- a01db33: bump react hooks eslint plugin
+
 ## 1.0.9
 
 ### Patch Changes
