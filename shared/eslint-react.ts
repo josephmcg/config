@@ -52,7 +52,17 @@ const config = {
         format: ['PascalCase'],
       },
       {
-        // Generic type parameter must start with letter T, followed by any uppercase letter.
+        selector: 'variable',
+        types: ['boolean'],
+        format: ['PascalCase'],
+        prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
+      },
+      {
+        selector: 'typeAlias',
+        format: ['PascalCase'],
+      },
+      {
+        // Generic type parameter must start with letter T, followed by any uppercase letter
         selector: 'typeParameter',
         format: ['PascalCase'],
         custom: { regex: '^T[A-Z]', match: true },
