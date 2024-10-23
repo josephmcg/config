@@ -25,16 +25,13 @@ const config = {
   ],
   rules: {
     curly: 'error',
-    '@typescript-eslint/explicit-function-return-type': 'error',
-    '@typescript-eslint/naming-convention': [
-      'error',
-      {
-        selector: 'enum',
-        format: ['PascalCase'],
-      },
-    ],
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-    'react/prop-types': 'off', // use zod if you need runtime validation
+
+    // imports
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'unused-imports/no-unused-imports': 'error',
+
+    // unicorn overrides
     'unicorn/filename-case': [
       'error',
       {
@@ -42,9 +39,26 @@ const config = {
       },
     ],
     'unicorn/prevent-abbreviations': 'off',
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error',
-    'unused-imports/no-unused-imports': 'error',
+
+    // React
+    'react/prop-types': 'off', // Use zod if you need runtime validation
+
+    // TS
+    '@typescript-eslint/explicit-function-return-type': 'error',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'enum',
+        format: ['PascalCase'],
+      },
+      {
+        // Generic type parameter must start with letter T, followed by any uppercase letter.
+        selector: 'typeParameter',
+        format: ['PascalCase'],
+        custom: { regex: '^T[A-Z]', match: true },
+      },
+    ],
+    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
   },
 } as const satisfies Linter.Config
 
