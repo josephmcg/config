@@ -1,5 +1,12 @@
 # @josephmcg/eslint-config-react
 
+## 1.0.12
+
+### Patch Changes
+
+- 88601d3: adjust eslint ts rules
+- 5ab5598: bump react eslint plugin
+
 ## 1.0.11
 
 ### Patch Changes
