@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 1.0.10
+
+### Patch Changes
+
+- 88601d3: adjust eslint ts rules
+
 ## 1.0.9
 
 ### Patch Changes
