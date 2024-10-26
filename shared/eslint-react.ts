@@ -49,17 +49,17 @@ const config = {
       'error',
       {
         selector: 'enum',
-        format: ['PascalCase'],
+        format: ['StrictPascalCase'],
       },
       {
         selector: 'variable',
         types: ['boolean'],
-        format: ['PascalCase'],
+        format: ['StrictPascalCase'],
         prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
       },
       {
         selector: 'typeAlias',
-        format: ['PascalCase'],
+        format: ['StrictPascalCase'],
       },
       {
         // Generic type parameter must start with letter T, followed by any uppercase letter
