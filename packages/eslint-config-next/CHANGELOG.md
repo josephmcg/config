@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 1.1.0
+
+### Minor Changes
+
+- 8b7f053: adjust variable naming conventions
+
 ## 1.0.10
 
 ### Patch Changes
