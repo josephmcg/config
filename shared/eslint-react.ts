@@ -58,6 +58,10 @@ const config = {
         prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
       },
       {
+        selector: 'interface',
+        format: ['StrictPascalCase'],
+      },
+      {
         selector: 'typeAlias',
         format: ['StrictPascalCase'],
       },
