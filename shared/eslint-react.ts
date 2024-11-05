@@ -4,6 +4,7 @@ const config = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/strict-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
@@ -32,12 +33,6 @@ const config = {
     'unused-imports/no-unused-imports': 'error',
 
     // unicorn overrides
-    'unicorn/filename-case': [
-      'error',
-      {
-        cases: { camelCase: true, pascalCase: true, kebabCase: true },
-      },
-    ],
     'unicorn/prevent-abbreviations': 'off',
 
     // React
@@ -73,6 +68,10 @@ const config = {
       },
     ],
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-empty-interface': [
+      'error',
+      { allowSingleExtends: true },
+    ],
   },
 } as const satisfies Linter.Config
 
