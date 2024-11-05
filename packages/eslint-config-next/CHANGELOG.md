@@ -1,5 +1,15 @@
 # @josephmcg/eslint-config-next
 
+## 1.2.0
+
+### Minor Changes
+
+- f1cee43: adjust eslint rules
+
+### Patch Changes
+
+- 668c257: enforce PascalCase for interface names
+
 ## 1.1.0
 
 ### Minor Changes
