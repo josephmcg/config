@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./base.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     /* If NOT transpiling with TypeScript: */
     "moduleResolution": "Bundler",
@@ -11,12 +11,6 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
 
     /* React specific jazz: */
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "jsx": "preserve"
   }
 }
