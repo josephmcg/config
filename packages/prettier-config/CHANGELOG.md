@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 2.0.0
+
+### Major Changes
+
+- 7371b64: remove tailwind config, since it's so project dependent
+
 ## 1.0.3
 
 ### Patch Changes
