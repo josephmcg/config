@@ -5,14 +5,12 @@ pnpm i -D @josephmcg/prettier-config
 ```
 
 ```ts
-// .prettierrc.mjs
-import { baseConfig, tailwindConfig } from '@josephmcg/prettier-config'
+// prettier.config.mjs
+import { baseConfig } from '@josephmcg/prettier-config'
 
 /** @type {import("prettier").Config} */
 const config = {
   ...baseConfig,
-  // OR
-  ...tailwindConfig,
   // additional config
 }
 

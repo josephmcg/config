@@ -1,12 +1,11 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
-  clean: true,
-  dts: {
-    resolve: true,
-    entry: './index.ts',
-  },
-  entry: ['index.ts'],
+  dts: true,
   format: ['esm'],
+  sourcemap: true,
   outDir: 'dist',
+  entry: ['src/index.ts'],
+  platform: 'node',
+  publicDir: true,
 })

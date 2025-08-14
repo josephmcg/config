@@ -9,10 +9,3 @@ export const baseConfig = {
   trailingComma: 'all',
   tabWidth: 2,
 } as const satisfies Options
-
-export const tailwindConfig = {
-  ...baseConfig,
-  plugins: ['prettier-plugin-tailwindcss'],
-  tailwindConfig: './tailwind.config.ts',
-  tailwindFunctions: ['clsx'],
-} as const satisfies Options
