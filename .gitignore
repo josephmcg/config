@@ -1,11 +1,17 @@
 # Mac
 .DS_Store
 
-# Dependency directories
-node_modules
-
-# Distribution files
-dist
+# Turbo
+.turbo
+**/node_modules/
+**/dist/
+**/pnpm-lock.yaml
 
 # Cache
 .eslintcache
+
+# Environment
+.env*
+
+# typescript
+*.tsbuildinfo

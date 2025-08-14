@@ -1,6 +1,8 @@
 {
   "name": "@josephmcg/prettier-config",
   "version": "1.0.3",
+  "description": "Prettier config for my projects",
+  "author": "josephmcg",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -8,18 +10,27 @@
     "directory": "packages/prettier-config"
   },
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "\n============== Dev ===============": "",
+    "dev": "tsup --watch",
     "build": "tsup",
-    "release": "pnpm run build && changeset publish"
+    "release": "pnpm run build && changeset publish",
+    "\n=========== Lint/Test ============": "",
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:eslint": "eslint --cache .",
+    "lint:prettier": "prettier --cache --check src",
+    "check-exports": "attw --profile esm-only --pack ."
   },
-  "dependencies": {
-    "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.8"
+  "peerDependencies": {
+    "prettier": "^3.0.0"
   }
 }
