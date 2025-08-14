@@ -28,6 +28,6 @@
     "check-exports": "attw --profile esm-only --pack ."
   },
   "peerDependencies": {
-    "prettier": "3.0.0"
+    "prettier": "^3.0.0"
   }
 }
