@@ -93,7 +93,7 @@ importers:
   packages/prettier-config:
     dependencies:
       prettier:
-        specifier: 3.0.0
+        specifier: ^3.0.0
         version: 3.0.0
 
   packages/tsconfig: {}
