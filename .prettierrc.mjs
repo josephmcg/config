@@ -1,8 +1,12 @@
-import { baseConfig } from '@josephmcg/prettier-config'
-
 /** @type {import("prettier").Config} */
 const config = {
-  ...baseConfig,
+  arrowParens: 'always',
+  printWidth: 80,
+  singleQuote: true,
+  jsxSingleQuote: false,
+  semi: false,
+  trailingComma: 'all',
+  tabWidth: 2,
 }
 
 export default config
