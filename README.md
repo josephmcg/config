@@ -1,4 +1,4 @@
-# @josephmcg/config [![CI](https://github.com/josephmcg/config/actions/workflows/main.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/main.yml) [![Publish](https://github.com/josephmcg/config/actions/workflows/publish.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/publish.yml)
+# @josephmcg/config [![CI](https://github.com/josephmcg/config/actions/workflows/ci.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/ci.yml) [![Publish](https://github.com/josephmcg/config/actions/workflows/publish.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/publish.yml)
 
 This is a collection of packages to speed up project scaffolding, with the added benefit of keeping config aligned between projects.
 

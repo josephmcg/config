@@ -25,6 +25,9 @@
     "build": "tsup",
     "release": "pnpm run build && changeset publish",
     "\n=========== Lint/Test ============": "",
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:eslint": "eslint --cache .",
+    "lint:prettier": "prettier --cache --check src",
     "check-exports": "attw --profile esm-only --pack ."
   },
   "peerDependencies": {
