@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 2.0.1
+
+### Patch Changes
+
+- 1c090d3: migrate to tsdown, testing trusted publishing
+
 ## 2.0.0
 
 ### Major Changes
