@@ -2,12 +2,12 @@
   "name": "@josephmcg/config",
   "private": true,
   "license": "MIT",
-  "packageManager": "pnpm@10.6.2",
+  "type": "module",
+  "packageManager": "pnpm@10.25.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/josephmcg/config.git"
   },
-  "type": "module",
   "workspaces": [
     "packages/*"
   ],
@@ -27,21 +27,18 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.2",
+    "@arethetypeswrong/core": "^0.18.2",
     "@changesets/cli": "^2.27.9",
+    "@commitlint/cli": "^20.2.0",
+    "@commitlint/config-conventional": "^20.2.0",
+    "@commitlint/types": "^20.2.0",
     "@types/eslint": "8.56.11",
     "eslint": "8.57.1",
     "husky": "^9.1.6",
+    "prettier": "^3.7.4",
+    "tsdown": "^0.17.3",
     "tsup": "^8.3.5",
-    "turbo": "^2.5.5",
+    "turbo": "^2.6.3",
     "typescript": "^5.9.2"
-  },
-  "pnpm": {
-    "updateConfig": {
-      "ignoreDependencies": [
-        "eslint",
-        "eslint-plugin-unused-imports",
-        "@types/eslint"
-      ]
-    }
   }
 }

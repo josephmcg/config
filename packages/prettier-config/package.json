@@ -11,24 +11,22 @@
   },
   "type": "module",
   "sideEffects": false,
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "files": [
     "dist",
-    "README.md",
-    "LICENSE"
+    "README.md"
   ],
   "scripts": {
     "\n============== Dev ===============": "",
-    "dev": "tsup --watch",
-    "build": "tsup",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
     "release": "pnpm run build && changeset publish",
     "\n=========== Lint/Test ============": "",
     "lint": "pnpm run '/^lint:.*/'",
     "lint:eslint": "eslint --cache .",
-    "lint:prettier": "prettier --cache --check src",
-    "check-exports": "attw --profile esm-only --pack ."
+    "lint:prettier": "prettier --cache --check src"
   },
   "peerDependencies": {
     "prettier": "^3.0.0"

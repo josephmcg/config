@@ -1,11 +1,15 @@
-import { defineConfig } from 'tsup'
+import { defineConfig } from 'tsdown'
 
 export default defineConfig({
+  attw: {
+    profile: 'esm-only',
+  },
   dts: true,
   format: ['esm'],
   sourcemap: true,
   outDir: 'dist',
   entry: ['src/index.ts'],
   platform: 'node',
-  publicDir: true,
+  copy: ['README.md'],
+  clean: false,
 })
