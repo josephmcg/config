@@ -35,6 +35,9 @@ importers:
 
   packages/eslint-config-next:
     dependencies:
+      '@josephmcg/eslint-config-react':
+        specifier: workspace:*
+        version: link:../eslint-config-react
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.18.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.1)(typescript@5.9.2))(eslint@8.57.1)(typescript@5.9.2)

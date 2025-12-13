@@ -1,31 +1,31 @@
-import { Linter } from 'eslint'
+import { Linter } from "eslint";
 
-import shared from '../../shared/eslint-react'
+import { baseConfig } from "@josephmcg/eslint-config-react";
 
 const config = {
-  ...shared,
+  ...baseConfig,
   extends: [
-    ...shared.extends,
-    'next/core-web-vitals',
+    ...baseConfig.extends,
+    "next/core-web-vitals",
     // This disables the formatting rules in ESLint that Prettier is going to be responsible for handling.
     // Make sure it's always the last config, so it gets the chance to override other configs.
-    'prettier',
+    "prettier",
   ],
   overrides: [
     {
-      files: ['**/*.*ts?(x)'],
-      parser: '@typescript-eslint/parser',
+      files: ["**/*.*ts?(x)"],
+      parser: "@typescript-eslint/parser",
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
         },
         // following line required for `plugin:@typescript-eslint/strict-type-checked`
-        project: './tsconfig.json',
-        sourceType: 'module',
+        project: "./tsconfig.json",
+        sourceType: "module",
         warnOnUnsupportedTypeScriptVersion: true,
       },
     },
   ],
-} as const satisfies Linter.Config
+} as const satisfies Linter.Config;
 
-export default config
+export default config;
