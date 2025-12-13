@@ -14,9 +14,12 @@
     "dist"
   ],
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "\n============== Dev ===============": "",
     "build": "tsup",
-    "release": "pnpm run build && changeset publish"
+    "release": "pnpm run build && changeset publish",
+    "\n============== Lint ==============": "",
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:prettier": "prettier --cache --check index.ts"
   },
   "dependencies": {
     "@josephmcg/eslint-config-react": "workspace:*",

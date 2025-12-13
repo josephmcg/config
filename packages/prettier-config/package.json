@@ -23,7 +23,7 @@
     "dev": "tsdown --watch",
     "build": "tsdown",
     "release": "pnpm run build && changeset publish",
-    "\n=========== Lint/Test ============": "",
+    "\n============== Lint ==============": "",
     "lint": "pnpm run '/^lint:.*/'",
     "lint:eslint": "eslint --cache .",
     "lint:prettier": "prettier --cache --check src"
