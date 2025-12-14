@@ -1,5 +1,5 @@
 import eslint from '@eslint/js'
-import { defineConfig, globalIgnores } from 'eslint/config'
+import type { defineConfig } from 'eslint/config'
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import reactPlugin from 'eslint-plugin-react'
@@ -12,7 +12,7 @@ import tseslint from 'typescript-eslint'
 /**
  * Base config that can be extended by other packages
  */
-export const baseConfig = defineConfig(
+export const baseConfig = [
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
@@ -32,7 +32,7 @@ export const baseConfig = defineConfig(
       'unused-imports': eslintPluginUnusedImports,
     },
   },
-)
+] as const satisfies Parameters<typeof defineConfig>
 // extends: [
 //   'eslint:recommended',
 //   'plugin:@typescript-eslint/strict-type-checked',

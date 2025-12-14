@@ -17,16 +17,13 @@
     "preinstall": "npx only-allow pnpm",
     "\n============== Dev ===============": "",
     "dev": "turbo run dev",
-    "\n=========== Lint/Test ============": "",
-    "lint": "turbo run lint",
-    "check-exports": "turbo run check-exports",
-    "\n============= Build ==============": "",
     "build": "turbo run build",
+    "\n============== Lint ==============": "",
+    "lint": "turbo run lint",
     "\n============= Publish ==============": "",
     "release": "turbo run build && changeset publish"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.18.2",
     "@arethetypeswrong/core": "^0.18.2",
     "@changesets/cli": "^2.29.8",
     "@commitlint/cli": "^20.2.0",
