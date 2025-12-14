@@ -98,8 +98,6 @@ const config: Linter.Config[] = [
         {
           allowList: {
             args: true,
-            ctx: true,
-            i: true,
             params: true,
             Params: true,
             props: true,
