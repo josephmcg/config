@@ -27,5 +27,5 @@
     /* If your code doesn't run in the DOM: */
     "lib": ["ES2023"]
   },
-  "include": ["*.config.*", "types", "packages/*/src"]
+  "include": ["*.config.*", "types", "packages/**/src"]
 }
