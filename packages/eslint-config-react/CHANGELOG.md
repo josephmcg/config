@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 2.0.0
+
+### Major Changes
+
+- a1621da: Update to eslint flat config
+
 ## 1.2.0
 
 ### Minor Changes

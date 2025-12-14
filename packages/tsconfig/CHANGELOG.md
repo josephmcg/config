@@ -1,5 +1,11 @@
 # @josephmcg/tsconfig
 
+## 2.0.1
+
+### Patch Changes
+
+- a1621da: Trusted publishing
+
 ## 2.0.0
 
 ### Major Changes

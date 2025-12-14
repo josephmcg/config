@@ -1,5 +1,16 @@
 # @josephmcg/eslint-config-next
 
+## 2.0.0
+
+### Major Changes
+
+- a1621da: Update to eslint flat config
+
+### Patch Changes
+
+- Updated dependencies [a1621da]
+  - @josephmcg/eslint-config-react@2.0.0
+
 ## 1.2.0
 
 ### Minor Changes
