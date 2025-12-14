@@ -1,6 +1,6 @@
 import { Linter } from 'eslint'
 
-import { baseConfig } from '@josephmcg/eslint-config-react'
+// import { baseConfig } from '@josephmcg/eslint-config-react'
 
 const config = {
   // ...baseConfig,

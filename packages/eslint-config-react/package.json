@@ -20,6 +20,7 @@
   ],
   "scripts": {
     "\n============== Dev ===============": "",
+    "dev": "tsdown --watch",
     "build": "tsdown",
     "release": "pnpm run build && changeset publish",
     "\n============== Lint ==============": "",
