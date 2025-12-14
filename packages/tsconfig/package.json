@@ -8,7 +8,6 @@
     "directory": "packages/tsconfig"
   },
   "files": [
-    "CHANGELOG.md",
     "README.md",
     "tsconfig.astro.json",
     "tsconfig.base.json",

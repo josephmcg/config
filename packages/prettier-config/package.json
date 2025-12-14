@@ -25,8 +25,8 @@
     "release": "pnpm run build && changeset publish",
     "\n============== Lint ==============": "",
     "lint": "pnpm run '/^lint:.*/'",
-    "lint:eslint": "eslint --cache .",
-    "lint:prettier": "prettier --cache --check src"
+    "lint:prettier": "prettier --cache --check src",
+    "lint:tsc": "tsc --noEmit"
   },
   "peerDependencies": {
     "prettier": "^3.0.0"
