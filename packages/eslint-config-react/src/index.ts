@@ -1,5 +1,4 @@
 import eslint from '@eslint/js'
-import type { defineConfig } from 'eslint/config'
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import reactPlugin from 'eslint-plugin-react'
@@ -7,12 +6,14 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import eslintPluginImportSort from 'eslint-plugin-simple-import-sort'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports'
-import tseslint from 'typescript-eslint'
+import tseslint, {
+  type InfiniteDepthConfigWithExtends,
+} from 'typescript-eslint'
 
 /**
  * Base config that can be extended by other packages
  */
-export const baseConfig = [
+export const baseConfig: InfiniteDepthConfigWithExtends = [
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
@@ -32,7 +33,7 @@ export const baseConfig = [
       'unused-imports': eslintPluginUnusedImports,
     },
   },
-] as const satisfies Parameters<typeof defineConfig>
+]
 // extends: [
 //   'eslint:recommended',
 //   'plugin:@typescript-eslint/strict-type-checked',
