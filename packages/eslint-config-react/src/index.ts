@@ -14,7 +14,7 @@ import tseslint, {
 /**
  * React specific eslint config
  */
-export const josephmcgReactEslintConfig: InfiniteDepthConfigWithExtends = [
+export const josephmcgConfigReact: InfiniteDepthConfigWithExtends = [
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
