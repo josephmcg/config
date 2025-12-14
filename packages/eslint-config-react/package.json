@@ -1,36 +1,30 @@
 {
   "name": "@josephmcg/eslint-config-react",
   "version": "1.2.0",
+  "description": "ESLint config for React projects",
+  "author": "josephmcg",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/josephmcg/config.git",
     "directory": "packages/eslint-config-react"
   },
-  "type": "commonjs",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "\n============== Dev ===============": "",
-    "build": "tsup",
+    "build": "tsdown",
     "release": "pnpm run build && changeset publish",
     "\n============== Lint ==============": "",
     "lint": "pnpm run '/^lint:.*/'",
-    "lint:prettier": "prettier --cache --check index.ts"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "eslint": "8.57.1",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-unicorn": "^56.0.0",
-    "eslint-plugin-unused-imports": "^3.2.0"
+    "lint:prettier": "prettier --cache --check src",
+    "lint:tsc": "tsc --noEmit"
   }
 }
