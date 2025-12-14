@@ -12,9 +12,9 @@ import tseslint, {
 } from 'typescript-eslint'
 
 /**
- * Base config that can be extended by other packages
+ * React specific eslint config
  */
-export const baseConfig: InfiniteDepthConfigWithExtends = [
+export const josephmcgReactEslintConfig: InfiniteDepthConfigWithExtends = [
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
@@ -40,33 +40,16 @@ export const baseConfig: InfiniteDepthConfigWithExtends = [
       'unused-imports': eslintPluginUnusedImports,
     },
     rules: {
-      curly: 'error', // Easier to read and maintain code
+      curly: 'error', // Consistency is key for readability and maintainability
       'no-console': 'error', // Use a logger utility so logs are not rendered in production
       'no-implicit-coercion': 'error', // Prefer Boolean over !! for readability
-      'no-nested-ternary': 'error', // Prefer guard clauses for readability
+      'no-nested-ternary': 'error', // Nested ternaries are hard to read and maintain
 
-      '@typescript-eslint/no-empty-object-type': [
-        'error',
-        { allowInterfaces: 'always' },
-      ], // Allow empty prop declarations that extend react types
-      '@typescript-eslint/no-unused-vars': [
-        // https://typescript-eslint.io/rules/no-unused-vars/#what-benefits-does-this-rule-have-over-typescript
-        'error',
-        {
-          args: 'all',
-          argsIgnorePattern: '^_',
-          caughtErrors: 'all',
-          caughtErrorsIgnorePattern: '^_',
-          destructuredArrayIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          ignoreRestSiblings: true,
-        },
-      ],
       '@typescript-eslint/consistent-type-assertions': [
+        // Type assertions are hacky and deserve to be banned
         'error',
         { assertionStyle: 'never' },
-      ], // Type assertions are hacky and deserve to be banned
-      '@typescript-eslint/no-deprecated': 'off', // This rule slows down eslint performance
+      ],
       '@typescript-eslint/naming-convention': [
         'error',
         {
@@ -86,6 +69,25 @@ export const baseConfig: InfiniteDepthConfigWithExtends = [
           selector: 'typeParameter',
           format: ['PascalCase'],
           custom: { regex: '^T[A-Z]', match: true },
+        },
+      ],
+      '@typescript-eslint/no-deprecated': 'off', // This rule slows down eslint performance
+      '@typescript-eslint/no-empty-object-type': [
+        // Allow empty prop declarations that extend react types
+        'error',
+        { allowInterfaces: 'always' },
+      ],
+      '@typescript-eslint/no-unused-vars': [
+        // https://typescript-eslint.io/rules/no-unused-vars/#what-benefits-does-this-rule-have-over-typescript
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
         },
       ],
 
@@ -136,7 +138,7 @@ export const baseConfig: InfiniteDepthConfigWithExtends = [
       // React
       'react/prop-types': 'off', // Write proper TS, use zod for runtime validation
       'jsx-a11y/no-autofocus': 'off', // Autofocus can be ideal UX
-      'jsx-a11y/anchor-has-content': 'off', // We intentionally don't hard code anchor content for i18n interpolation
+      'jsx-a11y/anchor-has-content': 'off', // We intentionally write empty anchor content for i18n interpolation
 
       // Comments
       '@eslint-community/eslint-comments/require-description': 'error', // Enforce comments when we disable an eslint rule
@@ -144,101 +146,3 @@ export const baseConfig: InfiniteDepthConfigWithExtends = [
     },
   },
 ]
-// extends: [
-//   'eslint:recommended',
-//   'plugin:@typescript-eslint/strict-type-checked',
-//   'plugin:@typescript-eslint/stylistic-type-checked',
-//   'plugin:react/recommended',
-//   'plugin:react-hooks/recommended',
-//   'plugin:jsx-a11y/recommended',
-//   'plugin:unicorn/recommended',
-// ],
-// ignorePatterns: [
-//   '**/package-lock.json',
-//   '**/pnpm-lock.yaml',
-//   '**/node_modules/**',
-//   '**/dist/**',
-//   '.next',
-// ],
-// plugins: [
-//   '@typescript-eslint',
-//   'react',
-//   'jsx-a11y',
-//   'simple-import-sort',
-//   'unused-imports',
-// ],
-// rules: {
-//   curly: 'error',
-//   // imports
-//   'simple-import-sort/imports': 'error',
-//   'simple-import-sort/exports': 'error',
-//   'unused-imports/no-unused-imports': 'error',
-//   // unicorn overrides
-//   'unicorn/prevent-abbreviations': 'off',
-//   // React
-//   'react/prop-types': 'off', // Use zod if you need runtime validation
-//   // TS
-//   '@typescript-eslint/explicit-function-return-type': 'error',
-//   '@typescript-eslint/naming-convention': [
-//     'error',
-//     {
-//       selector: 'enum',
-//       format: ['StrictPascalCase'],
-//     },
-//     {
-//       selector: 'variable',
-//       types: ['boolean'],
-//       format: ['StrictPascalCase'],
-//       prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
-//     },
-//     {
-//       selector: 'interface',
-//       format: ['StrictPascalCase'],
-//     },
-//     {
-//       selector: 'typeAlias',
-//       format: ['StrictPascalCase'],
-//     },
-//     {
-//       // Generic type parameter must start with letter T, followed by any uppercase letter
-//       selector: 'typeParameter',
-//       format: ['PascalCase'],
-//       custom: { regex: '^T[A-Z]', match: true },
-//     },
-//   ],
-//   '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-//   '@typescript-eslint/no-empty-interface': [
-//     'error',
-//     { allowSingleExtends: true },
-//   ],
-// },
-
-// const config = {
-// ...baseConfig,
-// extends: [
-//   ...baseConfig.extends,
-//   // This disables the formatting rules in ESLint that Prettier is going to be responsible for handling.
-//   // Make sure it's always the last config, so it gets the chance to override other configs.
-//   'prettier',
-// ],
-// globals: {
-//   React: 'readonly',
-// },
-// parser: '@typescript-eslint/parser',
-// parserOptions: {
-//   ecmaFeatures: {
-//     jsx: true,
-//   },
-//   ecmaVersion: 2022,
-//   // following line required for `plugin:@typescript-eslint/strict-type-checked`
-//   project: './tsconfig.json',
-//   sourceType: 'module',
-// },
-// settings: {
-//   react: {
-//     version: 'detect',
-//   },
-// },
-// } as const satisfies Linter.Config
-
-// export default config
