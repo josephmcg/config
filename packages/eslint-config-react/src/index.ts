@@ -1,5 +1,6 @@
 import eslint from '@eslint/js'
 import comments from '@eslint-community/eslint-plugin-eslint-comments/configs'
+import type { Linter } from 'eslint'
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import reactPlugin from 'eslint-plugin-react'
@@ -7,16 +8,16 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import eslintPluginImportSort from 'eslint-plugin-simple-import-sort'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports'
-import tseslint, {
-  type InfiniteDepthConfigWithExtends,
-} from 'typescript-eslint'
+import tseslint from 'typescript-eslint'
 
 /**
  * React specific eslint config
  */
-export const josephmcgConfigReact: InfiniteDepthConfigWithExtends = [
+const config: Linter.Config[] = [
   eslint.configs.recommended,
+  // @ts-expect-error https://github.com/typescript-eslint/typescript-eslint/issues/11543
   tseslint.configs.strictTypeChecked,
+  // @ts-expect-error https://github.com/typescript-eslint/typescript-eslint/issues/11543
   tseslint.configs.stylisticTypeChecked,
   eslintPluginUnicorn.configs.recommended,
   // @ts-expect-error https://github.com/jsx-eslint/eslint-plugin-react/issues/3878
@@ -91,21 +92,21 @@ export const josephmcgConfigReact: InfiniteDepthConfigWithExtends = [
         },
       ],
 
-      // 'unicorn/prevent-abbreviations': [
-      // // Some abbreviations are preferred over full words
-      //   'error',
-      //   {
-      //     allowList: {
-      //       props: true,
-      //       Props: true,
-      //       params: true,
-      //       Params: true,
-      //       args: true,
-      //       ctx: true,
-      //       i: true,
-      //     },
-      //   },
-      // ],
+      'unicorn/prevent-abbreviations': [
+        // Some abbreviations are preferred over full words
+        'error',
+        {
+          allowList: {
+            args: true,
+            ctx: true,
+            i: true,
+            params: true,
+            Params: true,
+            props: true,
+            Props: true,
+          },
+        },
+      ],
 
       // Import DX
       'simple-import-sort/imports': 'error',
@@ -136,9 +137,11 @@ export const josephmcgConfigReact: InfiniteDepthConfigWithExtends = [
       ],
 
       // React
+      'react/jsx-no-literals': 'error', // Enforce i18n with translation keys
       'react/prop-types': 'off', // Write proper TS, use zod for runtime validation
+      'jsx-a11y/anchor-has-content': 'off', // We need this for i18n interpolation
+      'jsx-a11y/heading-has-content': 'off', // We need this for i18n interpolation
       'jsx-a11y/no-autofocus': 'off', // Autofocus can be ideal UX
-      'jsx-a11y/anchor-has-content': 'off', // We intentionally write empty anchor content for i18n interpolation
 
       // Comments
       '@eslint-community/eslint-comments/require-description': 'error', // Enforce comments when we disable an eslint rule
@@ -146,3 +149,5 @@ export const josephmcgConfigReact: InfiniteDepthConfigWithExtends = [
     },
   },
 ]
+
+export default config

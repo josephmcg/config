@@ -17,9 +17,9 @@ const config = defineConfig(
   eslintConfigPrettier,
   {
     languageOptions: {
-      ecmaVersion: 2024,
       parser: tseslint.parser,
       parserOptions: {
+        ecmaVersion: 2024,
         project: './tsconfig.json',
         tsconfigRootDir: import.meta.dirname,
         sourceType: 'module',
