@@ -10,9 +10,6 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports'
 import tseslint from 'typescript-eslint'
 
-/**
- * React specific eslint config
- */
 const config: Linter.Config[] = [
   eslint.configs.recommended,
   // @ts-expect-error https://github.com/typescript-eslint/typescript-eslint/issues/11543
@@ -115,8 +112,7 @@ const config: Linter.Config[] = [
         'error',
         // Tree-shakeable zod imports
         {
-          selector:
-            "ImportDeclaration[source.value='zod'] ImportDefaultSpecifier",
+          selector: "ImportDeclaration[source.value='zod'] ImportDefaultSpecifier",
           message: "Use destructured import instead: import { z } from 'zod'",
         },
         // Prevent modules from exporting code that it does not own. This muddies module ownership and leads to circular dependencies.
@@ -127,8 +123,7 @@ const config: Linter.Config[] = [
             'Do not export a module that is imported. Import directly from the module where it was declared.',
         },
         {
-          selector:
-            'Program > ImportDefaultDeclaration ~ ExportDefaultDeclaration',
+          selector: 'Program > ImportDefaultDeclaration ~ ExportDefaultDeclaration',
           message:
             'Do not export a module that is imported. Import directly from the module where it was declared.',
         },

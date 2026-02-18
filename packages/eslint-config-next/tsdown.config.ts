@@ -8,6 +8,7 @@ export default defineConfig({
   copy: ['README.md'],
   dts: true,
   entry: ['src/index.ts'],
+  external: ['eslint', '@eslint/core', '@types/json-schema', '@types/estree'],
   format: ['esm'],
   outDir: 'dist',
   platform: 'node',
