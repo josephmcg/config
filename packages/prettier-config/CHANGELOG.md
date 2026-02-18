@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 3.0.0
+
+### Major Changes
+
+- c5a2997: use default package export
+
 ## 2.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-react
 
+## 3.0.0
+
+### Major Changes
+
+- c5a2997: bump peer dependency versions
+
 ## 2.0.0
 
 ### Major Changes
