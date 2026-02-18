@@ -1,5 +1,16 @@
 # @josephmcg/eslint-config-next
 
+## 3.0.0
+
+### Major Changes
+
+- c5a2997: add nextjs16 config
+
+### Patch Changes
+
+- Updated dependencies [c5a2997]
+  - @josephmcg/eslint-config-react@3.0.0
+
 ## 2.0.0
 
 ### Major Changes
