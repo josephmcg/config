@@ -29,9 +29,6 @@ importers:
       '@eslint/js':
         specifier: ^9.39.2
         version: 9.39.2
-      '@josephmcg/prettier-config':
-        specifier: workspace:*
-        version: link:packages/prettier-config
       '@total-typescript/ts-reset':
         specifier: ^0.6.1
         version: 0.6.1
