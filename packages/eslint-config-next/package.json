@@ -32,6 +32,6 @@
     "@josephmcg/eslint-config-react": "workspace:*"
   },
   "peerDependencies": {
-    "@next/eslint-plugin-next": "16.1.6"
+    "@next/eslint-plugin-next": "^16.1.6"
   }
 }

@@ -115,8 +115,7 @@ const config: Linter.Config[] = [
         'error',
         // Tree-shakeable zod imports
         {
-          selector:
-            "ImportDeclaration[source.value='zod'] ImportDefaultSpecifier",
+          selector: "ImportDeclaration[source.value='zod'] ImportDefaultSpecifier",
           message: "Use destructured import instead: import { z } from 'zod'",
         },
         // Prevent modules from exporting code that it does not own. This muddies module ownership and leads to circular dependencies.
@@ -127,8 +126,7 @@ const config: Linter.Config[] = [
             'Do not export a module that is imported. Import directly from the module where it was declared.',
         },
         {
-          selector:
-            'Program > ImportDefaultDeclaration ~ ExportDefaultDeclaration',
+          selector: 'Program > ImportDefaultDeclaration ~ ExportDefaultDeclaration',
           message:
             'Do not export a module that is imported. Import directly from the module where it was declared.',
         },

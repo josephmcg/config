@@ -1,6 +1,6 @@
 import type { Options } from 'prettier'
 
-export const baseConfig = {
+const config = {
   arrowParens: 'always',
   printWidth: 100,
   singleQuote: true,
@@ -9,3 +9,5 @@ export const baseConfig = {
   trailingComma: 'all',
   tabWidth: 2,
 } as const satisfies Options
+
+export default config
