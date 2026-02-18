@@ -28,7 +28,7 @@
     "lint:tsc": "tsc --noEmit",
     "lint:prettier": "prettier --cache --check src"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "4.6.0",
     "@eslint/js": "9.39.2",
     "eslint": "9.39.2",
