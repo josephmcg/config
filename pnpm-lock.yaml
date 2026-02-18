@@ -93,7 +93,7 @@ importers:
         specifier: workspace:*
         version: link:../eslint-config-react
       '@next/eslint-plugin-next':
-        specifier: ^16.1.6
+        specifier: 16.1.6
         version: 16.1.6
 
   packages/eslint-config-react:
