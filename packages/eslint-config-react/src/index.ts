@@ -10,9 +10,6 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 import eslintPluginUnusedImports from 'eslint-plugin-unused-imports'
 import tseslint from 'typescript-eslint'
 
-/**
- * React specific eslint config
- */
 const config: Linter.Config[] = [
   eslint.configs.recommended,
   // @ts-expect-error https://github.com/typescript-eslint/typescript-eslint/issues/11543

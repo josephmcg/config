@@ -6,11 +6,11 @@ pnpm i -D @josephmcg/prettier-config
 
 ```ts
 // prettier.config.mjs
-import { baseConfig } from '@josephmcg/prettier-config'
+import josephmcgConfig from '@josephmcg/prettier-config'
 
 /** @type {import("prettier").Config} */
 const config = {
-  ...baseConfig,
+  ...josephmcgConfig,
   // additional config
 }
 

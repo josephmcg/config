@@ -14,7 +14,6 @@ const config = defineConfig(josephmcgConfigReact, {
   languageOptions: {
     parser: tseslint.parser,
     parserOptions: {
-      ecmaVersion: 2022,
       ecmaFeatures: {
         jsx: true,
       },

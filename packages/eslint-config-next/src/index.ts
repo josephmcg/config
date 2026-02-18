@@ -1,9 +1,7 @@
 import configReact from '@josephmcg/eslint-config-react'
 import nextPlugin from '@next/eslint-plugin-next'
 import type { Linter } from 'eslint'
-/**
- * Next.js specific eslint config
- */
+
 const config: Linter.Config[] = [
   ...configReact,
   {
