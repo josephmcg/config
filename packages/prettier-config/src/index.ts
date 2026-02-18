@@ -2,7 +2,7 @@ import type { Options } from 'prettier'
 
 export const baseConfig = {
   arrowParens: 'always',
-  printWidth: 80,
+  printWidth: 100,
   singleQuote: true,
   jsxSingleQuote: false,
   semi: false,
