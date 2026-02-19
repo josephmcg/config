@@ -1,5 +1,11 @@
 # @josephmcg/tsconfig
 
+## 2.0.2
+
+### Patch Changes
+
+- 7a0b109: internal - better dry code for nextjs config
+
 ## 2.0.1
 
 ### Patch Changes
