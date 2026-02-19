@@ -1,17 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./tsconfig.base.json",
+  "extends": "./tsconfig.react.json",
   "compilerOptions": {
-    /* If NOT transpiling with TypeScript: */
-    "module": "preserve",
-    "moduleResolution": "bundler",
-    "noEmit": true,
-
-    /* If your code runs in the DOM: */
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-
-    /* Next specific jazz: */
-    "jsx": "preserve",
     "plugins": [
       {
         "name": "next"

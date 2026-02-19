@@ -3,12 +3,12 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     /* If NOT transpiling with TypeScript: */
-    "moduleResolution": "Bundler",
-    "module": "Preserve",
+    "module": "preserve",
+    "moduleResolution": "bundler",
     "noEmit": true,
 
     /* If your code runs in the DOM: */
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
 
     /* React specific jazz: */
     "jsx": "preserve"
