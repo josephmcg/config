@@ -28,10 +28,8 @@
     "lint:tsc": "tsc --noEmit",
     "lint:prettier": "prettier --cache --check src"
   },
-  "dependencies": {
-    "@josephmcg/eslint-config-react": "workspace:*"
-  },
   "peerDependencies": {
+    "@josephmcg/eslint-config-react": "workspace:*",
     "@next/eslint-plugin-next": "^16.1.6"
   }
 }
