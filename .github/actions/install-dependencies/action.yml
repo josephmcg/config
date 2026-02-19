@@ -1,0 +1,21 @@
+name: 'Install Dependencies'
+description: 'Install pnpm, Node.js, and project dependencies with caching'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        run_install: false
+        # version from package.json `packageManager`
+
+    - name: Setup node
+      uses: actions/setup-node@v6
+      with:
+        node-version-file: '.nvmrc'
+        cache: 'pnpm'
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install --frozen-lockfile

@@ -27,20 +27,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-          # version from package.json `packageManager`
-
-      - name: Setup node
-        uses: actions/setup-node@v6
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Install Dependencies
+        uses: ./.github/actions/install-dependencies
 
       - name: Create Release Pull Request or Publish
         id: changesets
