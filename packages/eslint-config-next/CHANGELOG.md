@@ -1,5 +1,11 @@
 # @josephmcg/eslint-config-next
 
+## 4.0.0
+
+### Major Changes
+
+- 101d110: mark react package as peer dep, requiring separate installation of peer deps
+
 ## 3.0.0
 
 ### Major Changes
