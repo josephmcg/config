@@ -1,12 +1,12 @@
 // @ts-check
 
 import eslint from '@eslint/js'
+import vitest from '@vitest/eslint-plugin'
 import { defineConfig, globalIgnores } from 'eslint/config'
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import unusedImports from 'eslint-plugin-unused-imports'
 import tseslint from 'typescript-eslint'
-
 const config = defineConfig(
   globalIgnores(['.*', 'node_modules', 'dist']),
   eslint.configs.recommended,
@@ -35,6 +35,15 @@ const config = defineConfig(
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
       'unused-imports/no-unused-imports': 'error',
+    },
+  },
+  {
+    files: ['**/*.test.ts'],
+    plugins: {
+      vitest,
+    },
+    rules: {
+      ...vitest.configs.recommended.rules,
     },
   },
 )

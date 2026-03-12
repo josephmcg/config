@@ -1,0 +1,33 @@
+{
+  "name": "@josephmcg/is-webview",
+  "version": "0.0.0",
+  "description": "Utility to detect if the page is running inside a native app's webview",
+  "author": "josephmcg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josephmcg/config.git",
+    "directory": "packages/is-webview"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "\n============== Dev ===============": "",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "release": "pnpm run build && changeset publish",
+    "\n============== Lint ==============": "",
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:tsc": "tsc --noEmit",
+    "lint:prettier": "prettier --cache --check src",
+    "\n============== Test ==============": "",
+    "test": "vitest run"
+  }
+}
