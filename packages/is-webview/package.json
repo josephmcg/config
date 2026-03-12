@@ -1,7 +1,7 @@
 {
   "name": "@josephmcg/is-webview",
   "version": "0.0.0-placeholder",
-  "description": "Utility to detect if the page is running inside a native app's webview",
+  "description": "Utility to detect if a userAgent string is coming from a native app's webview",
   "author": "josephmcg",
   "license": "MIT",
   "repository": {
