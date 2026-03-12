@@ -7,8 +7,9 @@ import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import unusedImports from 'eslint-plugin-unused-imports'
 import tseslint from 'typescript-eslint'
+
 const config = defineConfig(
-  globalIgnores(['.*', 'node_modules', 'dist']),
+  globalIgnores(['.*', '**/node_modules', '**/dist']),
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,

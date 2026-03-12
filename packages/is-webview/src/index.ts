@@ -10,8 +10,17 @@
  *    excluded so they don't get a false positive.
  * 3. Generic Android WebView: Android userAgent containing `wv`, which Google's
  *    WebView appends automatically.
+ *
+ * @example
+ * import { isWebview } from '@josephmcg/is-webview'
+ *
+ * if (isWebview(navigator.userAgent)) {
+ *   console.log('This is a webview')
+ * } else {
+ *   console.log('This is not a webview')
+ * }
  */
-export const isWebview = (userAgent: typeof navigator.userAgent): boolean => {
+export const isWebview = (userAgent: string): boolean => {
   const isKnownInAppBrowser =
     /Line\/|FBAN|FBAV|Instagram|MicroMessenger|TikTok|Snapchat|Twitter/.test(userAgent)
 
