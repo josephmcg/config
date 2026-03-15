@@ -1,4 +1,4 @@
-# eslint-config-react <a href="https://npm.im/@josephmcg/eslint-config-react"><img src="https://badgen.net/npm/v/@josephmcg/eslint-config-react"></a> <a href="https://npm.im/@josephmcg/eslint-config-react"><img src="https://badgen.net/npm/dm/@josephmcg/eslint-config-react"></a> <a href="https://packagephobia.now.sh/result?p=@josephmcg/eslint-config-react"><img src="https://packagephobia.now.sh/badge?p=@josephmcg/eslint-config-react"></a>
+# eslint-config-react &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/josephmcg/config/blob/main/LICENSE) ![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Feslint-config-react)
 
 ```bash
 pnpm i -D @josephmcg/eslint-config-react

@@ -1,13 +1,13 @@
 {
-  "name": "@josephmcg/prettier-config",
-  "version": "3.0.0",
-  "description": "Prettier config for my projects",
+  "name": "@josephmcg/is-webview",
+  "version": "0.0.0",
+  "description": "Utility to detect if a userAgent string is coming from a native app's webview",
   "author": "josephmcg",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/josephmcg/config.git",
-    "directory": "packages/prettier-config"
+    "directory": "packages/is-webview"
   },
   "type": "module",
   "sideEffects": false,
@@ -26,9 +26,8 @@
     "\n============== Lint ==============": "",
     "lint": "pnpm run '/^lint:.*/'",
     "lint:tsc": "tsc --noEmit",
-    "lint:prettier": "prettier --cache --check src"
-  },
-  "peerDependencies": {
-    "prettier": "^3.0.0"
+    "lint:prettier": "prettier --cache --check src",
+    "\n============== Test ==============": "",
+    "test": "vitest run"
   }
 }

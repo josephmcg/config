@@ -1,4 +1,4 @@
-# prettier-config <a href="https://npm.im/@josephmcg/prettier-config"><img src="https://badgen.net/npm/v/@josephmcg/prettier-config"></a> <a href="https://npm.im/@josephmcg/prettier-config"><img src="https://badgen.net/npm/dm/@josephmcg/prettier-config"></a> <a href="https://packagephobia.now.sh/result?p=@josephmcg/prettier-config"><img src="https://packagephobia.now.sh/badge?p=@josephmcg/prettier-config"></a>
+# prettier-config &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/josephmcg/config/blob/main/LICENSE) ![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fprettier-config)
 
 ```bash
 pnpm i -D @josephmcg/prettier-config

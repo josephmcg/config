@@ -4,7 +4,8 @@ This is a collection of packages to speed up project scaffolding, with the added
 
 It's opinionated, so feel free to fork it and make it your own.
 
-- [eslint-config-next](https://github.com/josephmcg/config/tree/main/packages/eslint-config-next#readme)
-- [eslint-config-react](https://github.com/josephmcg/config/tree/main/packages/eslint-config-react#readme)
-- [prettier-config](https://github.com/josephmcg/config/tree/main/packages/prettier-config#readme)
-- [tsconfig](https://github.com/josephmcg/config/tree/main/packages/tsconfig#readme)
+- [eslint-config-next](./packages/eslint-config-next/README.md)
+- [eslint-config-react](./packages/eslint-config-react/README.md)
+- [prettier-config](./packages/prettier-config/README.md)
+- [is-webview](./packages/is-webview/README.md)
+- [tsconfig](./packages/tsconfig/README.md)
