@@ -1,6 +1,6 @@
 {
   "name": "@josephmcg/is-webview",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Utility to detect if a userAgent string is coming from a native app's webview",
   "author": "josephmcg",
   "license": "MIT",
