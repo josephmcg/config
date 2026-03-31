@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest'
 
-import { isWebview } from '@/index'
+import { isWebview } from '../src'
 
 const setUserAgent = (value: string): void => {
   Object.defineProperty(navigator, 'userAgent', { configurable: true, value })

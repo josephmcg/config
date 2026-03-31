@@ -64,6 +64,7 @@ const config = defineConfig({
   ],
   rules: {
     'import/no-named-export': 'off',
+    'import/no-relative-parent-imports': 'off',
     'import/prefer-default-export': 'off',
   },
 })
