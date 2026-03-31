@@ -14,5 +14,6 @@ export default defineConfig({
   format: ['esm'],
   outDir: 'dist',
   platform: 'node',
+  publint: true,
   sourcemap: true,
 })

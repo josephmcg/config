@@ -1,0 +1,35 @@
+{
+  "name": "@josephmcg/oxfmt-config",
+  "version": "0.0.0",
+  "description": "oxfmt config for my projects",
+  "license": "MIT",
+  "author": "josephmcg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephmcg/config.git",
+    "directory": "packages/oxfmt-config"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "scripts": {
+    "\n============== Dev ===============": "",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "release": "pnpm run build && changeset publish",
+    "\n============== Lint ==============": "",
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:tsc": "tsc --noEmit",
+    "\n============== Test ==============": "",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "oxfmt": "^0.42.0"
+  }
+}
