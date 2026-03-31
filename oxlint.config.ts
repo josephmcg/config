@@ -10,14 +10,15 @@ const config = defineConfig({
     style: 'error',
     suspicious: 'error',
   },
-  env: {
-    browser: true,
-  },
   ignorePatterns: [
     'packages/eslint-config-react/src/index.ts',
     'packages/eslint-config-next/src/index.ts',
     'packages/prettier-config/src/index.ts',
   ],
+  jsPlugins: ['@eslint-community/eslint-plugin-eslint-comments'],
+  options: {
+    typeAware: true,
+  },
   overrides: [
     {
       files: ['./*config.ts', './packages/**/*config.ts'],
@@ -34,6 +35,9 @@ const config = defineConfig({
       },
     },
     {
+      env: {
+        browser: true,
+      },
       files: ['*.test.ts'],
       plugins: ['vitest'],
       rules: {

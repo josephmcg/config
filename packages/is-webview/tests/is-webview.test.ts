@@ -1,7 +1,6 @@
 import { afterEach, describe, expect, it } from 'vitest'
 
-// oxlint-disable-next-line import/no-relative-parent-imports
-import { isWebview } from '../src'
+import { isWebview } from '@/index'
 
 const setUserAgent = (value: string): void => {
   Object.defineProperty(navigator, 'userAgent', { configurable: true, value })
