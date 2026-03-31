@@ -18,6 +18,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
 
     /* If NOT transpiling with TypeScript: */
     "module": "preserve",

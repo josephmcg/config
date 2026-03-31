@@ -1,6 +1,6 @@
 import type { OxfmtConfig } from 'oxfmt'
 
-const josephmcgOxfmtConfig = {
+export const josephmcgOxfmtConfig = {
   arrowParens: 'always',
   ignorePatterns: [
     '.changeset',
@@ -30,5 +30,3 @@ const josephmcgOxfmtConfig = {
   tabWidth: 2,
   trailingComma: 'all',
 } as const satisfies OxfmtConfig
-
-export { josephmcgOxfmtConfig }

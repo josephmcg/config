@@ -66,6 +66,7 @@ const config = defineConfig({
     'import/no-named-export': 'off',
     'import/no-relative-parent-imports': 'off',
     'import/prefer-default-export': 'off',
+    'oxc/no-rest-spread-properties': 'off',
   },
 })
 
