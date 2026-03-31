@@ -6,11 +6,11 @@ export default defineConfig({
   },
   clean: false,
   copy: ['README.md'],
-  dts: true,
-  entry: ['src/index.ts'],
   deps: {
     neverBundle: ['eslint', '@eslint/core', '@types/json-schema', '@types/estree'],
   },
+  dts: true,
+  entry: ['src/index.ts'],
   format: ['esm'],
   outDir: 'dist',
   platform: 'node',

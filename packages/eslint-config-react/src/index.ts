@@ -1,6 +1,7 @@
-import eslint from '@eslint/js'
-import comments from '@eslint-community/eslint-plugin-eslint-comments/configs'
 import type { Linter } from 'eslint'
+
+import comments from '@eslint-community/eslint-plugin-eslint-comments/configs'
+import eslint from '@eslint/js'
 import eslintConfigPrettier from 'eslint-config-prettier/flat'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import reactPlugin from 'eslint-plugin-react'
@@ -17,9 +18,7 @@ const config: Linter.Config[] = [
   // @ts-expect-error https://github.com/typescript-eslint/typescript-eslint/issues/11543
   tseslint.configs.stylisticTypeChecked,
   eslintPluginUnicorn.configs.recommended,
-  // @ts-expect-error https://github.com/jsx-eslint/eslint-plugin-react/issues/3878
   reactPlugin.configs.flat.recommended,
-  // @ts-expect-error https://github.com/jsx-eslint/eslint-plugin-react/issues/3878
   reactPlugin.configs.flat['jsx-runtime'],
   reactHooks.configs.flat.recommended,
   jsxA11y.flatConfigs.recommended,
