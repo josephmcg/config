@@ -1,6 +1,6 @@
 {
   "name": "@josephmcg/eslint-config-next",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "ESLint config for Next.js projects",
   "license": "MIT",
   "author": "josephmcg",
