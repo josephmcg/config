@@ -1,5 +1,11 @@
 # @josephmcg/prettier-config
 
+## 3.0.1
+
+### Patch Changes
+
+- cf61ed9: deprecation notice
+
 ## 3.0.0
 
 ### Major Changes

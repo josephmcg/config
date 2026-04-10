@@ -1,5 +1,13 @@
 # @josephmcg/eslint-config-next
 
+## 4.0.1
+
+### Patch Changes
+
+- cf61ed9: deprecation notice
+- Updated dependencies [cf61ed9]
+  - @josephmcg/eslint-config-react@3.0.1
+
 ## 4.0.0
 
 ### Major Changes
