@@ -2,31 +2,27 @@
   "name": "@josephmcg/eslint-config-react",
   "version": "3.0.0",
   "description": "ESLint config for React projects",
-  "author": "josephmcg",
   "license": "MIT",
+  "author": "josephmcg",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/josephmcg/config.git",
     "directory": "packages/eslint-config-react"
   },
-  "type": "module",
-  "sideEffects": false,
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
   "files": [
     "dist",
     "README.md"
   ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
   "scripts": {
     "\n============== Dev ===============": "",
     "dev": "tsdown --watch",
     "build": "tsdown",
-    "release": "pnpm run build && changeset publish",
-    "\n============== Lint ==============": "",
-    "lint": "pnpm run '/^lint:.*/'",
-    "lint:tsc": "tsc --noEmit",
-    "lint:prettier": "prettier --cache --check src"
+    "release": "pnpm run build && changeset publish"
   },
   "peerDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.6.0",

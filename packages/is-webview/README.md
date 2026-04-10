@@ -1,4 +1,4 @@
-# is-webview &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/josephmcg/config/blob/main/LICENSE) ![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fis-webview)
+# @josephmcg/is-webview &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/josephmcg/config/blob/main/LICENSE) [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Fis-webview)](https://www.npmjs.com/package/@josephmcg/is-webview)
 
 A tiny utility function that will determine if the provided `userAgent` string is coming from a webview within a native application.
 

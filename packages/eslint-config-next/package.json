@@ -2,34 +2,31 @@
   "name": "@josephmcg/eslint-config-next",
   "version": "4.0.0",
   "description": "ESLint config for Next.js projects",
-  "author": "josephmcg",
   "license": "MIT",
+  "author": "josephmcg",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/josephmcg/config.git",
     "directory": "packages/eslint-config-next"
   },
-  "type": "module",
-  "sideEffects": false,
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
   "files": [
     "dist",
     "README.md"
   ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
   "scripts": {
     "\n============== Dev ===============": "",
     "dev": "tsdown --watch",
     "build": "tsdown",
-    "release": "pnpm run build && changeset publish",
-    "\n============== Lint ==============": "",
-    "lint": "pnpm run '/^lint:.*/'",
-    "lint:tsc": "tsc --noEmit",
-    "lint:prettier": "prettier --cache --check src"
+    "release": "pnpm run build && changeset publish"
   },
   "peerDependencies": {
     "@josephmcg/eslint-config-react": "workspace:*",
-    "@next/eslint-plugin-next": "^16.1.6"
+    "@next/eslint-plugin-next": "^16.1.6",
+    "eslint": "^9.39.2"
   }
 }

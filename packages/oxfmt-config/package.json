@@ -1,13 +1,13 @@
 {
-  "name": "@josephmcg/is-webview",
-  "version": "1.0.0",
-  "description": "Utility to detect if a userAgent string is coming from a native app's webview",
+  "name": "@josephmcg/oxfmt-config",
+  "version": "0.0.0",
+  "description": "oxfmt config for my projects",
   "license": "MIT",
   "author": "josephmcg",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/josephmcg/config.git",
-    "directory": "packages/is-webview"
+    "directory": "packages/oxfmt-config"
   },
   "files": [
     "dist",
@@ -16,7 +16,7 @@
   "type": "module",
   "sideEffects": false,
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/index.mjs"
   },
   "scripts": {
     "\n============== Dev ===============": "",
@@ -25,8 +25,9 @@
     "release": "pnpm run build && changeset publish",
     "\n============== Lint ==============": "",
     "lint": "pnpm run '/^lint:.*/'",
-    "lint:tsc": "tsc --noEmit",
-    "\n============== Test ==============": "",
-    "test": "vitest run"
+    "lint:tsc": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "oxfmt": "^0.42.0"
   }
 }

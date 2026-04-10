@@ -2,21 +2,21 @@ import { afterEach, describe, expect, it } from 'vitest'
 
 import { isWebview } from '../src'
 
-const setUserAgent = (value: string) => {
-  Object.defineProperty(navigator, 'userAgent', { value, configurable: true })
+const setUserAgent = (value: string): void => {
+  Object.defineProperty(navigator, 'userAgent', { configurable: true, value })
 }
 
 afterEach(() => {
   Object.defineProperty(navigator, 'userAgent', {
-    value: navigator.userAgent,
     configurable: true,
+    value: navigator.userAgent,
   })
 })
 
 /**
  * These `userAgent` strings have been confirmed on the following devices
  */
-describe('isWebview', () => {
+describe(isWebview, () => {
   describe('real browsers — returns false', () => {
     it('returns false for iOS 26.3.1 Safari', () => {
       setUserAgent(

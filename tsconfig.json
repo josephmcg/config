@@ -18,6 +18,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "forceConsistentCasingInFileNames": true,
     "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
 
     /* If NOT transpiling with TypeScript: */
     "module": "preserve",
@@ -27,11 +28,17 @@
     "lib": ["ES2023"]
   },
   "include": [
-    "*.config.*",
     "types",
+    "*.config.*",
     "packages/**/src",
     "packages/**/tests",
     "packages/**/*.config.*"
   ],
-  "exclude": ["node_modules", "dist"]
+  "exclude": [
+    "dist",
+    "node_modules",
+    "packages/eslint-config-react/src/index.ts",
+    "packages/eslint-config-next/src/index.ts",
+    "packages/prettier-config/src/index.ts"
+  ]
 }
