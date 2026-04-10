@@ -15,3 +15,5 @@
 
 # typescript
 *.tsbuildinfo
+
+*.tgz
