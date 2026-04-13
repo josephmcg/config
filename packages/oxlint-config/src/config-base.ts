@@ -15,7 +15,7 @@ export const baseRestrictedImportPaths = [
 ] as const
 
 export const josephmcgOxlintConfigBase = defineConfig({
-  plugins: ['eslint', 'typescript', 'unicorn', 'oxc'],
+  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'promise'],
   categories: {
     correctness: 'error',
     suspicious: 'error',
@@ -30,30 +30,30 @@ export const josephmcgOxlintConfigBase = defineConfig({
     typeAware: true,
   },
   rules: {
-    'arrow-body-style': 'off', // Allow both block and concise arrow functions for readability
-    'capitalized-comments': 'off', // Sometimes we may comment code that should remain lowercase
-    curly: 'error', // Enforce consistency for readability
+    'arrow-body-style': 'off',
+    'capitalized-comments': 'off',
+    curly: 'error',
     'func-style': 'off', // Allow both arrow and function declarations, they serve different purposes
-    'id-length': ['error', { exceptions: ['a', 'b', 'i', 't'] }],
-    'max-lines': 'off',
+    'id-length': ['error', { exceptions: ['a', 'b', 'i', 't'] }], // Rarely, short variable names are acceptable
+    'max-lines': 'off', // Max * is arbitrary, use your judgement
     'max-lines-per-function': 'off',
     'max-params': 'off',
     'max-statements': 'off',
-    'new-cap': 'off', // External libraries can use poor naming conventions
+    'new-cap': 'off', // External libraries can use poor naming conventions (e.g. nextjs fonts)
     'no-console': 'error', // Use a logger utility so logs are not rendered in production
     'no-inline-comments': 'off',
-    'no-magic-numbers': 'off', // Sometimes magic numbers keep code simple
+    'no-magic-numbers': 'off', // Magic numbers are acceptable in certain cases
     'no-restricted-imports': [
       'error',
       {
         paths: [...baseRestrictedImportPaths],
       },
     ],
-    'no-ternary': 'off', // Sometimes ternary is more readable
-    'sort-keys': 'off', // Manually sorting keys is often better for readability
-    'sort-imports': 'off', // Let oxfmt handle this
+    'no-ternary': 'off',
+    'sort-keys': 'off',
+    'sort-imports': 'off', // Handled by `oxfmt`
 
-    'typescript/consistent-type-assertions': ['error', { assertionStyle: 'never' }], // Type assertions are hacky and deserve to be banned
+    'typescript/consistent-type-assertions': ['error', { assertionStyle: 'never' }], // Type assertions are awful and deserve to be banned
     'typescript/no-deprecated': 'off', // Sometimes deprecated code is necessary, plus this rule has poor performance
     'typescript/no-empty-interface': ['error', { allowSingleExtends: true }], // Allow empty prop declarations that extend react types
     'typescript/strict-boolean-expressions': [
@@ -66,8 +66,8 @@ export const josephmcgOxlintConfigBase = defineConfig({
       },
     ],
 
-    'unicorn/no-nested-ternary': 'off', // Allow eslint rule to handle this
+    'unicorn/no-nested-ternary': 'off', // `eslint` rule handles this
 
-    'eslint-comments/require-description': 'error',
+    'oxc/no-rest-spread-properties': 'off',
   },
 })
