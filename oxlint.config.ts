@@ -1,59 +1,15 @@
 import { defineConfig } from 'oxlint'
 
+import { josephmcgOxlintConfigBase } from './packages/oxlint-config/src/config-base.ts'
+
 const config = defineConfig({
-  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'promise', 'node'],
-  categories: {
-    correctness: 'error',
-    pedantic: 'error',
-    perf: 'error',
-    restriction: 'error',
-    style: 'error',
-    // restriction: 'error',
-    // nursery: 'error'
-  },
-  options: {
-    typeAware: true,
-  },
+  extends: [josephmcgOxlintConfigBase],
+  plugins: ['node'],
   ignorePatterns: [
     'packages/eslint-config-react/src/index.ts',
     'packages/eslint-config-next/src/index.ts',
     'packages/prettier-config/src/index.ts',
   ],
-  rules: {
-    'arrow-body-style': 'off', // Allow both block and concise arrow functions for readability
-    'capitalized-comments': 'off', // Allow lowercase comments for readability
-    curly: 'error', // Enforce consistency for readability
-    'func-style': 'off', // Allow both arrow and function declarations, they serve different purposes
-    'id-length': ['error', { exceptions: ['a', 'b', 'i', 't'] }],
-    'max-lines': 'off', // Max * is arbitrary, use your judgement
-    'max-lines-per-function': 'off',
-    'max-params': 'off',
-    'max-statements': 'off',
-    'new-cap': 'off', // External libraries can use poor naming conventions (nextjs fonts for example)
-    'no-console': 'error', // Use a logger utility so logs are not rendered in production
-    'no-inline-comments': 'off',
-    'no-magic-numbers': 'off', // Sometimes magic numbers keep code simple
-    'no-ternary': 'off', // Sometimes ternary is more readable
-    'sort-keys': 'off',
-    'sort-imports': 'off', // Let oxfmt handle this
-
-    'typescript/consistent-type-assertions': ['error', { assertionStyle: 'never' }], // Type assertions are hacky and deserve to be banned
-    'typescript/no-deprecated': 'off', // This rule is not performant
-    'typescript/no-empty-interface': ['error', { allowSingleExtends: true }], // Allow empty prop declarations that extend react types
-    'typescript/strict-boolean-expressions': [
-      'error',
-      {
-        allowNullableBoolean: true,
-        allowNullableObject: true,
-        allowNullableString: true,
-        allowString: true,
-      },
-    ],
-
-    'unicorn/no-nested-ternary': 'off', // Allow eslint rule to handle this
-
-    'oxc/no-rest-spread-properties': 'off',
-  },
   overrides: [
     {
       env: {
