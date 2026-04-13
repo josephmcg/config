@@ -1,9 +1,7 @@
 import { defineConfig } from 'oxlint'
 
 /**
- * For `no-restricted-imports`, each config will need its own declaration.
- * There's no way to extend individual rules, since users need to be able to override the rule.
- * This will be shared among other configs.
+ * `no-restricted-imports` paths config to ensure zod is being properly tree-shaken.
  * @see https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-restricted-imports.html
  */
 export const baseRestrictedImportPaths = [

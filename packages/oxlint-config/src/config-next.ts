@@ -4,7 +4,8 @@ import { baseRestrictedImportPaths } from './config-base'
 import { josephmcgOxlintConfigReact } from './config-react'
 
 /**
- * Use i18n wrappers around navigation for localization support.
+ * `no-restricted-imports` paths config to ensure i18n navigation helpers are being used.
+ * Also includes zod tree-shaking paths from the base config.
  * @see https://oxc.rs/docs/guide/usage/linter/rules/eslint/no-restricted-imports.html
  */
 export const nextRestrictedImportPaths = [
