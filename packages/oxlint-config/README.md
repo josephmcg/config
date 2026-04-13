@@ -4,13 +4,29 @@
 pnpm i -D @josephmcg/oxlint-config
 ```
 
+Import your preferred config based on your framework of choice:
+
 ```ts
 // oxlint.config.ts
 import { defineConfig } from 'oxlint'
-import { josephmcgoxlintConfig } from '@josephmcg/oxlint-config'
+import {
+  josephmcgOxlintConfigBase,
+  josephmcgOxlintConfigNext,
+  josephmcgOxlintConfigReact,
+} from '@josephmcg/oxlint-config'
 
 export default defineConfig({
-  ...josephmcgoxlintConfig,
+  // ...josephmcgOxlintConfigBase,
+  // ...josephmcgOxlintConfigNext,
+  // ...josephmcgOxlintConfigReact,
   // additional config
 })
 ```
+
+## Restricted Imports
+
+I've configured sensible restricted imports for the base config to allow for proper zod tree-shaking.
+
+For the Next.js config, I've configured restricted imports for the navigation helpers to use the i18n wrapper.
+
+You can access those specific rules at `baseRestrictedImportPaths`, or `nextRestrictedImportPaths` if you'd like to configure your own restricted imports, while still benefitting from the base config.
