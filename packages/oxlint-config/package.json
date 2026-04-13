@@ -1,0 +1,30 @@
+{
+  "name": "@josephmcg/oxlint-config",
+  "version": "0.0.0",
+  "description": "Oxlint config for projects",
+  "license": "MIT",
+  "author": "josephmcg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephmcg/config.git",
+    "directory": "packages/oxlint-config"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "scripts": {
+    "\n============== Dev ===============": "",
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "release": "pnpm run build && changeset publish"
+  },
+  "peerDependencies": {
+    "oxlint": "^1.59.0"
+  }
+}
