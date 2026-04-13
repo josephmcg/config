@@ -15,7 +15,7 @@ export const baseRestrictedImportPaths = [
 ] as const
 
 export const josephmcgOxlintConfigBase = defineConfig({
-  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'promise'],
+  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'promise', 'vitest'],
   categories: {
     correctness: 'error',
     suspicious: 'error',
@@ -70,5 +70,8 @@ export const josephmcgOxlintConfigBase = defineConfig({
     'unicorn/no-nested-ternary': 'off', // `eslint` rule handles this
 
     'oxc/no-rest-spread-properties': 'off',
+
+    'vitest/no-importing-vitest-globals': 'off',
+    'jest/valid-title': 'off',
   },
 })

@@ -15,6 +15,12 @@ export const josephmcgOxlintConfigReact = defineConfig({
     'react/jsx-max-depth': 'off', // Max * is arbitrary, use your judgement
     'react/react-in-jsx-scope': 'off', // Not required in React 19
 
+    // These would be ideal, but they're not pragmatic to fix at the moment. Most of them are not consequential for RSC
+    'react-perf/jsx-no-jsx-as-prop': 'off',
+    'react-perf/jsx-no-new-array-as-prop': 'off',
+    'react-perf/jsx-no-new-function-as-prop': 'off',
+    'react-perf/jsx-no-new-object-as-prop': 'off',
+
     'jsx-a11y/heading-has-content': 'off', // `base-ui` render props and i18n interpolation use empty heading elements
     'jsx-a11y/no-autofocus': 'off', // Autofocus is ideal UX in certain cases
   },
