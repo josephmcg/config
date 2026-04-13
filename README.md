@@ -2,10 +2,15 @@
 
 This is a collection of packages to speed up project scaffolding, with the added benefit of keeping config aligned between projects.
 
-It's opinionated, so feel free to fork it and make it your own.
-
-- [eslint-config-next](./packages/eslint-config-next/README.md)
-- [eslint-config-react](./packages/eslint-config-react/README.md)
-- [prettier-config](./packages/prettier-config/README.md)
 - [is-webview](./packages/is-webview/README.md)
+- [oxfmt-config](./packages/oxfmt-config/README.md)
+- [oxlint-config](./packages/oxlint-config/README.md)
 - [tsconfig](./packages/tsconfig/README.md)
+
+## Deprecated
+
+These configurations are deprecated because I'm switching everything to the superior [oxc toolchain](https://oxc.rs/docs/guide/what-is-oxc.html).
+
+- [eslint-config-react](./packages/eslint-config-react/README.md)
+- [eslint-config-next](./packages/eslint-config-next/README.md)
+- [prettier-config](./packages/prettier-config/README.md)

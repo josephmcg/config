@@ -11,8 +11,10 @@ export const josephmcgOxlintConfigReact = defineConfig({
     },
   },
   rules: {
-    'react/jsx-props-no-spreading': 'off', // Props spreading is useful
+    // Helpful in enforcing i18n
+    'react/jsx-curly-brace-presence': ['error', { children: 'always' }],
     'react/jsx-max-depth': 'off', // Max * is arbitrary, use your judgement
+    'react/jsx-props-no-spreading': 'off', // Props spreading is useful
     'react/react-in-jsx-scope': 'off', // Not required in React 19
 
     // These would be ideal, but they're not pragmatic to fix at the moment. Most of them are not consequential for RSC
