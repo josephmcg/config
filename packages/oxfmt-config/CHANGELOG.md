@@ -1,5 +1,11 @@
 # @josephmcg/oxfmt-config
 
+## 0.0.3
+
+### Patch Changes
+
+- 1271498: bump oxfmt peer dep
+
 ## 0.0.2
 
 ### Patch Changes
