@@ -34,7 +34,7 @@ export const josephmcgOxlintConfigBase = defineConfig({
     'capitalized-comments': 'off',
     curly: 'error',
     'func-style': 'off', // Allow both arrow and function declarations, they serve different purposes
-    'id-length': ['error', { exceptions: ['a', 'b', 'i', 't'] }], // Rarely, short variable names are acceptable
+    'id-length': ['error', { exceptions: ['a', 'b', 'i', 't'] }], // In specific cases, short variable names are acceptable
     'max-lines': 'off', // Max * is arbitrary, use your judgement
     'max-lines-per-function': 'off',
     'max-params': 'off',
@@ -50,6 +50,7 @@ export const josephmcgOxlintConfigBase = defineConfig({
       },
     ],
     'no-ternary': 'off',
+    'prefer-destructuring': 'off',
     'sort-keys': 'off',
     'sort-imports': 'off', // Handled by `oxfmt`
 

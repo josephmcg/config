@@ -5,6 +5,11 @@ import { josephmcgOxlintConfigBase } from './config-base'
 export const josephmcgOxlintConfigReact = defineConfig({
   extends: [josephmcgOxlintConfigBase],
   plugins: ['react', 'react-perf', 'jsx-a11y'],
+  settings: {
+    react: {
+      version: '19',
+    },
+  },
   rules: {
     'react/jsx-props-no-spreading': 'off', // Props spreading is useful
     'react/jsx-max-depth': 'off', // Max * is arbitrary, use your judgement
