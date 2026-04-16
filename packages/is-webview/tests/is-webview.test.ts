@@ -6,17 +6,17 @@ const setUserAgent = (value: string): void => {
   Object.defineProperty(navigator, 'userAgent', { configurable: true, value })
 }
 
-afterEach(() => {
-  Object.defineProperty(navigator, 'userAgent', {
-    configurable: true,
-    value: navigator.userAgent,
-  })
-})
-
 /**
  * These `userAgent` strings have been confirmed on the following devices
  */
 describe(isWebview, () => {
+  afterEach(() => {
+    Object.defineProperty(navigator, 'userAgent', {
+      configurable: true,
+      value: navigator.userAgent,
+    })
+  })
+
   describe('real browsers — returns false', () => {
     it('returns false for iOS 26.3.1 Safari', () => {
       setUserAgent(

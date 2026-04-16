@@ -1,6 +1,6 @@
 # @josephmcg/config [![CI](https://github.com/josephmcg/config/actions/workflows/ci.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/ci.yml) [![Publish](https://github.com/josephmcg/config/actions/workflows/publish.yml/badge.svg)](https://github.com/josephmcg/config/actions/workflows/publish.yml)
 
-This is a collection of packages to speed up project scaffolding, with the added benefit of keeping config aligned between projects.
+This is a collection of packages to speed up project scaffolding, with the added benefit of keeping config aligned between projects. In the beginning it was purely config, but it's gradually expanding to include more tools and utilities.
 
 - [is-webview](./packages/is-webview/README.md)
 - [oxfmt-config](./packages/oxfmt-config/README.md)
