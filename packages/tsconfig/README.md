@@ -1,4 +1,4 @@
-# tsconfig &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/josephmcg/config/blob/main/LICENSE) ![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Ftsconfig)
+# tsconfig &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/josephmcg/config/blob/main/LICENSE) [![NPM Version](https://img.shields.io/npm/v/%40josephmcg%2Ftsconfig)](https://www.npmjs.com/package/@josephmcg/tsconfig)
 
 ```bash
 pnpm i -D @josephmcg/tsconfig
