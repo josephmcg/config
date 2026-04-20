@@ -69,7 +69,13 @@ export const josephmcgOxlintConfigBase = defineConfig({
 
     'oxc/no-rest-spread-properties': 'off',
 
+    'vitest/max-expects': 'off',
+    'vitest/no-hooks': 'off',
     'vitest/no-importing-vitest-globals': 'off',
-    'jest/valid-title': 'off',
+    'vitest/prefer-strict-boolean-matchers': 'error',
+    'vitest/prefer-to-be-falsy': 'off',
+    'vitest/prefer-to-be-truthy': 'off',
+    'vitest/require-test-timeout': 'off',
+    'vitest/valid-title': 'off',
   },
 })
