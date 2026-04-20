@@ -1,5 +1,11 @@
 # @josephmcg/tsconfig
 
+## 2.0.3
+
+### Patch Changes
+
+- 7a82c79: include erasableSyntaxOnly in all tsconfig
+
 ## 2.0.2
 
 ### Patch Changes

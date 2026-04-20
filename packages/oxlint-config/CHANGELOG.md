@@ -1,5 +1,11 @@
 # @josephmcg/oxlint-config
 
+## 0.0.3
+
+### Patch Changes
+
+- 7a82c79: refine vitest rules in base oxlint config
+
 ## 0.0.2
 
 ### Patch Changes
