@@ -11,11 +11,13 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
     "incremental": true,
+    "erasableSyntaxOnly": true,
 
     /* Strictness: */
     "strict": true,
-    "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true
   }
 }
