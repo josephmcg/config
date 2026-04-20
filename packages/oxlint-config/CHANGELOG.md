@@ -1,5 +1,11 @@
 # @josephmcg/oxlint-config
 
+## 0.0.4
+
+### Patch Changes
+
+- 730621a: add important type aware rules
+
 ## 0.0.3
 
 ### Patch Changes
