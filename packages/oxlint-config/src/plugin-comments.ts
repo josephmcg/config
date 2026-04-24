@@ -1,9 +1,4 @@
-import {
-  eslintCompatPlugin,
-  type Comment,
-  type Context,
-  type CreateOnceRule,
-} from '@oxlint/plugins'
+import { eslintCompatPlugin, type Comment, type CreateOnceRule } from '@oxlint/plugins'
 
 const DIRECTIVE_PATTERN =
   /^(?:(?:eslint|oxlint)(?:-env|-enable|-disable(?:(?:-next)?-line)?)?|exported|globals?)(?:\s|$)/u
@@ -84,15 +79,14 @@ function parseDirectiveComment(comment: Comment): ParsedDirective | undefined {
   return parsed
 }
 
-const rule: CreateOnceRule = {
+const ruleRequireDescription: CreateOnceRule = {
   meta: {
     docs: {
       description: 'require descriptions on oxlint/eslint directive comments',
       recommended: false,
     },
     messages: {
-      missingDescription:
-        'Unexpected undescribed directive comment. Include descriptions to explain why the comment is necessary.',
+      missingDescription: 'Include a description to explain why you disabled the rule.',
     },
     schema: {
       type: 'object' as const,
@@ -109,9 +103,9 @@ const rule: CreateOnceRule = {
     },
   },
   /** Prefer `createOnce` so Oxlint can optimize JS plugin dispatch (see Oxlint “Writing JS plugins”). */
-  createOnce(context: Context): { Program(): void } {
+  createOnce(context) {
     const ignores = new Set<string>()
-    const optionsObject = context.options[0]
+    const optionsObject = context.options?.[0]
     if (
       optionsObject !== null &&
       optionsObject !== undefined &&
@@ -151,10 +145,10 @@ const rule: CreateOnceRule = {
  */
 const plugin = eslintCompatPlugin({
   meta: {
-    name: 'oxlint-comments',
+    name: '@josephmcg/plugin-comments',
   },
   rules: {
-    'require-description': rule,
+    'require-description': ruleRequireDescription,
   },
 })
 

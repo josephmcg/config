@@ -16,7 +16,8 @@
   "type": "module",
   "sideEffects": false,
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": "./dist/index.mjs",
+    "./plugin-comments": "./dist/plugin-comments.mjs"
   },
   "scripts": {
     "\n============== Dev ===============": "",
@@ -25,6 +26,7 @@
     "release": "pnpm run build && changeset publish"
   },
   "peerDependencies": {
+    "@oxlint/plugins": "^1.59.0",
     "oxlint": "^1.59.0"
   }
 }
