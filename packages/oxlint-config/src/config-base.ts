@@ -73,10 +73,10 @@ export const josephmcgOxlintConfigBase = defineConfig({
     'sort-imports': 'off', // Handled by `oxfmt`
 
     'typescript/consistent-type-assertions': ['error', { assertionStyle: 'never' }], // Type assertions defeat the entire purpose of TypeScript
-    'typescript/explicit-function-return-type': 'error', // Declaring return types improves robustness and performance of TypeScript
     'typescript/no-deprecated': 'off', // Sometimes deprecated code is necessary, plus this rule has poor performance
     'typescript/no-empty-interface': ['error', { allowSingleExtends: true }], // Allow empty prop declarations that extend react types
     'typescript/no-explicit-any': 'error', // Use `unknown` instead of `any`
+    'typescript/no-import-type-side-effects': 'error', // Prevent side effects from type imports
     'typescript/no-non-null-assertion': 'error', // Non-null assertions lead to brittle code and unexpected runtime errors
     'typescript/strict-boolean-expressions': [
       'error',
@@ -89,6 +89,7 @@ export const josephmcgOxlintConfigBase = defineConfig({
     ],
 
     'unicorn/no-nested-ternary': 'off', // `eslint` rule handles this
+    'unicorn/no-useless-undefined': 'off', // undefined is better than null, and sometimes we need to return undefined to indicate a missing value
 
     'oxc/no-rest-spread-properties': 'off',
 

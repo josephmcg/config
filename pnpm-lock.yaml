@@ -133,6 +133,9 @@ importers:
 
   packages/oxlint-config:
     dependencies:
+      '@oxlint/plugins':
+        specifier: ^1.59.0
+        version: 1.59.0
       oxlint:
         specifier: ^1.59.0
         version: 1.59.0(oxlint-tsgolint@0.20.0)
