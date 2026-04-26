@@ -1,5 +1,11 @@
 # @josephmcg/oxlint-config
 
+## 0.0.5
+
+### Patch Changes
+
+- 520389a: tweak rules, establish required comment plugin
+
 ## 0.0.4
 
 ### Patch Changes
