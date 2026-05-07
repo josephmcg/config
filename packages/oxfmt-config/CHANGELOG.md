@@ -1,5 +1,11 @@
 # @josephmcg/oxfmt-config
 
+## 0.0.4
+
+### Patch Changes
+
+- c53eb54: bump peer deps
+
 ## 0.0.3
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @josephmcg/oxlint-config
 
+## 0.0.6
+
+### Patch Changes
+
+- c53eb54: bump peer deps
+
 ## 0.0.5
 
 ### Patch Changes
