@@ -30,6 +30,7 @@
   },
   "peerDependencies": {
     "@oxlint/plugins": "^1.63.0",
-    "oxlint": "^1.63.0"
+    "oxlint": "^1.63.0",
+    "oxlint-tsgolint": "^0.22.1"
   }
 }
