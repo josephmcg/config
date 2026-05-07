@@ -22,10 +22,10 @@
  */
 export const isWebview = (userAgent: string): boolean => {
   const isKnownInAppBrowser =
-    /Line\/|FBAN|FBAV|Instagram|MicroMessenger|TikTok|Snapchat|Twitter/.test(userAgent)
+    /Line\/|FBAN|FBAV|Instagram|MicroMessenger|TikTok|Snapchat|Twitter/u.test(userAgent)
 
-  const isIos = /iPhone|iPad/.test(userAgent)
-  const isStandaloneBrowser = /CriOS|FxiOS|EdgiOS/.test(userAgent)
+  const isIos = /iPhone|iPad/u.test(userAgent)
+  const isStandaloneBrowser = /CriOS|FxiOS|EdgiOS/u.test(userAgent)
   const isIosWebView = isIos && !isStandaloneBrowser && !userAgent.includes('Safari/')
 
   const isAndroidWebView = userAgent.includes('Android') && userAgent.includes('; wv)')

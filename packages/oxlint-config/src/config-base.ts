@@ -78,6 +78,7 @@ export const josephmcgOxlintConfigBase = defineConfig({
     'typescript/no-explicit-any': 'error', // Use `unknown` instead of `any`
     'typescript/no-import-type-side-effects': 'error', // Prevent side effects from type imports
     'typescript/no-non-null-assertion': 'error', // Non-null assertions lead to brittle code and unexpected runtime errors
+    'typescript/prefer-readonly-parameter-types': 'off', // This would make everything verbose
     'typescript/strict-boolean-expressions': [
       'error',
       {
@@ -96,10 +97,12 @@ export const josephmcgOxlintConfigBase = defineConfig({
     'vitest/max-expects': 'off',
     'vitest/no-hooks': 'off',
     'vitest/no-importing-vitest-globals': 'off',
+    'vitest/prefer-expect-assertions': 'off',
     'vitest/prefer-strict-boolean-matchers': 'error',
     'vitest/prefer-to-be-falsy': 'off',
     'vitest/prefer-to-be-truthy': 'off',
     'vitest/require-test-timeout': 'off',
+
     'vitest/valid-title': 'off',
   },
 })

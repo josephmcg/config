@@ -17,7 +17,7 @@ describe(isWebview, () => {
     })
   })
 
-  describe('real browsers — returns false', () => {
+  describe('standard browser userAgent — returns false', () => {
     it('returns false for iOS 26.3.1 Safari', () => {
       setUserAgent(
         'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.3 Mobile/15E148 Safari/604.1',
@@ -40,7 +40,7 @@ describe(isWebview, () => {
     })
   })
 
-  describe('known in-app browsers — returns true', () => {
+  describe('known in-app browser userAgent — returns true', () => {
     it('returns true for LINE on iOS 26.3.1', () => {
       setUserAgent(
         'Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari Line/26.2.0',
