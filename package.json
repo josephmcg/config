@@ -21,7 +21,6 @@
     "lint": "pnpm run '/^lint:.*/'",
     "lint:turbo": "turbo run lint",
     "lint:oxfmt": "oxfmt --check",
-    "lint:oxlint": "oxlint .",
     "\n============= Test ===============": "",
     "test": "turbo run test",
     "\n============ Publish =============": "",

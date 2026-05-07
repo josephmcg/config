@@ -25,9 +25,10 @@
     "release": "pnpm run build && changeset publish",
     "\n============== Lint ==============": "",
     "lint": "pnpm run '/^lint:.*/'",
-    "lint:tsc": "tsc --noEmit"
+    "lint:tsgo": "tsgo --noEmit",
+    "lint:oxlint": "oxlint ."
   },
   "peerDependencies": {
-    "oxfmt": "^0.44.0"
+    "oxfmt": "^0.48.0"
   }
 }

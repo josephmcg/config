@@ -25,7 +25,8 @@
     "release": "pnpm run build && changeset publish",
     "\n============== Lint ==============": "",
     "lint": "pnpm run '/^lint:.*/'",
-    "lint:tsc": "tsc --noEmit",
+    "lint:tsgo": "tsgo --noEmit",
+    "lint:oxlint": "oxlint .",
     "\n============== Test ==============": "",
     "test": "vitest run"
   }
