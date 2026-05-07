@@ -13,7 +13,7 @@ export const baseRestrictedImportPaths = [
 ] as const
 
 export const josephmcgOxlintConfigBase = defineConfig({
-  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'promise', 'vitest'],
+  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'promise'],
   categories: {
     correctness: 'error',
     suspicious: 'error',
@@ -72,12 +72,14 @@ export const josephmcgOxlintConfigBase = defineConfig({
     'sort-keys': 'off',
     'sort-imports': 'off', // Handled by `oxfmt`
 
+    'typescript/consistent-return': 'off', // `return` is functionally the same as `return undefined`
     'typescript/consistent-type-assertions': ['error', { assertionStyle: 'never' }], // Type assertions defeat the entire purpose of TypeScript
     'typescript/no-deprecated': 'off', // Sometimes deprecated code is necessary, plus this rule has poor performance
     'typescript/no-empty-interface': ['error', { allowSingleExtends: true }], // Allow empty prop declarations that extend react types
     'typescript/no-explicit-any': 'error', // Use `unknown` instead of `any`
     'typescript/no-import-type-side-effects': 'error', // Prevent side effects from type imports
     'typescript/no-non-null-assertion': 'error', // Non-null assertions lead to brittle code and unexpected runtime errors
+    'typescript/prefer-readonly-parameter-types': 'off', // This would make everything verbose
     'typescript/strict-boolean-expressions': [
       'error',
       {
@@ -92,14 +94,22 @@ export const josephmcgOxlintConfigBase = defineConfig({
     'unicorn/no-useless-undefined': 'off', // undefined is better than null, and sometimes we need to return undefined to indicate a missing value
 
     'oxc/no-rest-spread-properties': 'off',
-
-    'vitest/max-expects': 'off',
-    'vitest/no-hooks': 'off',
-    'vitest/no-importing-vitest-globals': 'off',
-    'vitest/prefer-strict-boolean-matchers': 'error',
-    'vitest/prefer-to-be-falsy': 'off',
-    'vitest/prefer-to-be-truthy': 'off',
-    'vitest/require-test-timeout': 'off',
-    'vitest/valid-title': 'off',
   },
+  overrides: [
+    {
+      plugins: ['vitest'],
+      files: ['**/*.test.ts', '**/*.test.tsx'],
+      rules: {
+        'vitest/max-expects': 'off',
+        'vitest/no-hooks': 'off',
+        'vitest/no-importing-vitest-globals': 'off',
+        'vitest/prefer-expect-assertions': 'off',
+        'vitest/prefer-strict-boolean-matchers': 'error',
+        'vitest/prefer-to-be-falsy': 'off',
+        'vitest/prefer-to-be-truthy': 'off',
+        'vitest/require-test-timeout': 'off',
+        'vitest/valid-title': 'off',
+      },
+    },
+  ],
 })
