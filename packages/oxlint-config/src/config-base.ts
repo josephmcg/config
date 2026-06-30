@@ -101,8 +101,8 @@ export const josephmcgOxlintConfigBase = defineConfig({
     'import/max-dependencies': 'off', // Max * is arbitrary, use your judgement
     'import/no-cycle': 'error', // Circular dependencies are bad, ignores type imports by default
     'import/no-named-export': 'off', // Named exports are often better for autocomplete and readability
-    'import/no-unassigned-import': ['error', { allow: ['**/*.css'] }],
-    'import/prefer-default-export': 'off',
+    'import/no-unassigned-import': ['error', { allow: ['**/*.css'] }], // Wildcard allows for side effect imports, which are bad – but css is an exception
+    'import/prefer-default-export': 'off', // Default exports lead to inconsistent naming
   },
   overrides: [
     {
