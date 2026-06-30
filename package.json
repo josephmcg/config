@@ -36,7 +36,7 @@
     "@total-typescript/ts-reset": "0.6.1",
     "@types/node": "25.6.0",
     "@typescript/native-preview": "7.0.0-dev.20260506.1",
-    "happy-dom": "20.9.0",
+    "happy-dom": "20.10.6",
     "husky": "9.1.7",
     "lint-staged": "17.0.2",
     "oxfmt": "0.48.0",
@@ -46,11 +46,11 @@
     "tsdown": "0.21.10",
     "turbo": "2.9.9",
     "typescript": "6.0.3",
-    "vite": "8.0.10",
-    "vitest": "4.1.5"
+    "vite": "8.1.1",
+    "vitest": "4.1.9"
   },
   "lint-staged": {
     "*": "oxfmt --no-error-on-unmatched-pattern"
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@11.1.1+sha512.d1fdf5f73c617b64fa1a56a81c3c8dfe0e966e33a6010aa256b517ae77be21d93e05affc0de1a83b0e4f29d569f68b446ae8f068cd7247c0bb3df0fb4d7bdf9a"
 }
