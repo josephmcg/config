@@ -34,11 +34,5 @@
     "packages/**/tests",
     "packages/**/*.config.*"
   ],
-  "exclude": [
-    "dist",
-    "node_modules",
-    "packages/eslint-config-react/src/index.ts",
-    "packages/eslint-config-next/src/index.ts",
-    "packages/prettier-config/src/index.ts"
-  ]
+  "exclude": ["dist", "node_modules"]
 }

@@ -1,4 +1,4 @@
-import { defineConfig } from 'oxlint'
+import { defineConfig, type OxlintConfig } from 'oxlint'
 
 /**
  * `no-restricted-imports` paths config to ensure zod is being properly tree-shaken.
@@ -112,4 +112,4 @@ export const josephmcgOxlintConfigBase = defineConfig({
       },
     },
   ],
-})
+} satisfies OxlintConfig)

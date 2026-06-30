@@ -1,4 +1,4 @@
-import { defineConfig } from 'oxlint'
+import { defineConfig, type OxlintConfig } from 'oxlint'
 
 import { baseRestrictedImportPaths } from './config-base'
 import { josephmcgOxlintConfigReact } from './config-react'
@@ -34,4 +34,4 @@ export const josephmcgOxlintConfigNext = defineConfig({
 
     'nextjs/no-img-element': 'off', // Leads to heavy compute without an image optimization service
   },
-})
+} satisfies OxlintConfig)

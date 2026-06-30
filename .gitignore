@@ -7,9 +7,6 @@
 **/dist/
 **/pnpm-lock.yaml
 
-# Cache
-.eslintcache
-
 # Environment
 .env*
 
