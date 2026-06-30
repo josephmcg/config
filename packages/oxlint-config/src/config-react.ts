@@ -1,4 +1,4 @@
-import { defineConfig } from 'oxlint'
+import { defineConfig, type OxlintConfig } from 'oxlint'
 
 import { josephmcgOxlintConfigBase } from './config-base'
 
@@ -25,4 +25,4 @@ export const josephmcgOxlintConfigReact = defineConfig({
     'jsx-a11y/heading-has-content': 'off', // `base-ui` render props and i18n interpolation use empty heading elements
     'jsx-a11y/no-autofocus': 'off', // Autofocus is ideal UX in certain cases
   },
-})
+} satisfies OxlintConfig)

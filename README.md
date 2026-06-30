@@ -9,8 +9,10 @@ This is a collection of packages to speed up project scaffolding, with the added
 
 ## Deprecated
 
-These configurations are deprecated because I'm switching everything to the superior [oxc toolchain](https://oxc.rs/docs/guide/what-is-oxc.html).
+The following configurations are deprecated because I've migrated to the [oxc toolchain](https://oxc.rs/docs/guide/what-is-oxc.html).
 
-- [eslint-config-react](./packages/eslint-config-react/README.md)
-- [eslint-config-next](./packages/eslint-config-next/README.md)
-- [prettier-config](./packages/prettier-config/README.md)
+- eslint-config-react
+- eslint-config-next
+- prettier-config
+
+If you want to see the source, you'll find them at [this hash](https://github.com/josephmcg/config/tree/2b640b329d9694b8363eba93ea45a78bd9c8d6d0).

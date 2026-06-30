@@ -3,13 +3,11 @@ import type { OxfmtConfig } from 'oxfmt'
 export const josephmcgOxfmtConfig = {
   arrowParens: 'always',
   ignorePatterns: [
-    '.changeset',
-    '.turbo',
-    'dist',
-    'node_modules',
-    'CODEOWNERS',
     'CHANGELOG.md',
-    'pnpm-lock.yaml',
+    'CODEOWNERS',
+    '.changeset',
+    '.github/ISSUE_TEMPLATE/',
+    '.github/pull_request_template.md',
   ],
   jsxSingleQuote: false,
   printWidth: 100,
