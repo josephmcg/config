@@ -1,5 +1,11 @@
 # @josephmcg/oxlint-config
 
+## 0.0.7
+
+### Patch Changes
+
+- 875d8cd: Include import rules
+
 ## 0.0.6
 
 ### Patch Changes
