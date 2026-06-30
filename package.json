@@ -18,7 +18,7 @@
     "dev": "turbo run dev",
     "build": "turbo run build",
     "\n============== Lint ==============": "",
-    "lint": "pnpm run '/lint:.*/'",
+    "lint": "pnpm run '/^lint:.*/'",
     "lint:turbo": "turbo run lint",
     "lint:oxfmt": "oxfmt --check",
     "\n============= Test ===============": "",
