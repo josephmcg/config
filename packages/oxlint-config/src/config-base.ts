@@ -13,7 +13,7 @@ export const baseRestrictedImportPaths = [
 ] as const
 
 export const josephmcgOxlintConfigBase = defineConfig({
-  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'promise'],
+  plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'promise', 'import'],
   categories: {
     correctness: 'error',
     suspicious: 'error',
@@ -94,6 +94,15 @@ export const josephmcgOxlintConfigBase = defineConfig({
     'unicorn/no-useless-undefined': 'off', // undefined is better than null, and sometimes we need to return undefined to indicate a missing value
 
     'oxc/no-rest-spread-properties': 'off',
+
+    'import/consistent-type-specifier-style': 'off', // Different imports call for different styles
+    'import/exports-last': 'off', // Exporting immediately as consts are defined is more readable
+    'import/group-exports': 'off', // ^
+    'import/max-dependencies': 'off', // Max * is arbitrary, use your judgement
+    'import/no-cycle': 'error', // Circular dependencies are bad, ignores type imports by default
+    'import/no-named-export': 'off', // Named exports are often better for autocomplete and readability
+    'import/no-unassigned-import': ['error', { allow: ['**/*.css'] }],
+    'import/prefer-default-export': 'off',
   },
   overrides: [
     {
@@ -109,6 +118,12 @@ export const josephmcgOxlintConfigBase = defineConfig({
         'vitest/prefer-to-be-truthy': 'off',
         'vitest/require-test-timeout': 'off',
         'vitest/valid-title': 'off',
+      },
+    },
+    {
+      files: ['**/*.d.ts'],
+      rules: {
+        'import/no-unassigned-import': 'off', // Allow library augmentation in `*.d.ts` files
       },
     },
   ],
