@@ -13,7 +13,6 @@
   "scripts": {
     "\n============= Setup ==============": "",
     "prepare": "husky",
-    "preinstall": "npx only-allow pnpm",
     "\n============== Dev ===============": "",
     "dev": "turbo run dev",
     "build": "turbo run build",
