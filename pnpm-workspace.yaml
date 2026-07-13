@@ -1,8 +1,14 @@
-packages:
-  - 'packages/*'
-
 allowBuilds:
   esbuild: false
+blockExoticSubdeps: true
+minimumReleaseAge: 10080 # 7 days
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - '@josephmcg/*'
+  - 'typescript'
+
+packages:
+  - 'packages/*'
 
 overrides:
   'js-yaml': '3.15.0'
