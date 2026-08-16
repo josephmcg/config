@@ -1,5 +1,11 @@
 # @josephmcg/oxfmt-config
 
+## 0.1.0
+
+### Minor Changes
+
+- b533262: Bump underlying dependencies
+
 ## 0.0.4
 
 ### Patch Changes

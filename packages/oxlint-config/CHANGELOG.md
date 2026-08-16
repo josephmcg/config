@@ -1,5 +1,11 @@
 # @josephmcg/oxlint-config
 
+## 0.1.0
+
+### Minor Changes
+
+- b533262: Bump underlying dependencies
+
 ## 0.0.7
 
 ### Patch Changes
