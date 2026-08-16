@@ -1,5 +1,6 @@
 allowBuilds:
   esbuild: false
+  lefthook: false
 blockExoticSubdeps: true
 minimumReleaseAge: 10080 # 7 days
 minimumReleaseAgeExclude:
