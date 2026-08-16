@@ -29,6 +29,6 @@
     "lint:oxlint": "oxlint ."
   },
   "peerDependencies": {
-    "oxfmt": "^0.48.0"
+    "oxfmt": "^0.62.0"
   }
 }

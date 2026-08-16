@@ -1,6 +1,6 @@
 import { defineConfig, type OxlintConfig } from 'oxlint'
 
-import { baseRestrictedImportPaths } from './config-base'
+import { baseRestrictedImportPaths, type RestrictedImportPath } from './config-base'
 import { josephmcgOxlintConfigReact } from './config-react'
 
 /**
@@ -19,7 +19,7 @@ export const nextRestrictedImportPaths = [
     importNames: ['redirect', 'permanentRedirect', 'useRouter', 'usePathname'],
     message: 'Please import from `@/i18n/navigation` instead.',
   },
-] as const
+] satisfies RestrictedImportPath[]
 
 export const josephmcgOxlintConfigNext = defineConfig({
   extends: [josephmcgOxlintConfigReact],

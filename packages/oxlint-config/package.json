@@ -26,11 +26,12 @@
     "release": "pnpm run build && changeset publish",
     "\n============== Lint ==============": "",
     "lint": "pnpm run '/^lint:.*/'",
+    "lint:tsc": "tsc --noEmit",
     "lint:oxlint": "oxlint ."
   },
   "peerDependencies": {
-    "@oxlint/plugins": "^1.63.0",
-    "oxlint": "^1.63.0",
-    "oxlint-tsgolint": "^0.22.1"
+    "@oxlint/plugins": "^1.77.0",
+    "oxlint": "^1.77.0",
+    "oxlint-tsgolint": "^7.0.2001"
   }
 }

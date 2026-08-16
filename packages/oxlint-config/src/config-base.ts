@@ -1,4 +1,10 @@
-import { defineConfig, type OxlintConfig } from 'oxlint'
+import { defineConfig, type DummyRuleMap, type OxlintConfig } from 'oxlint'
+
+/** Object entries for `no-restricted-imports` `paths`. Oxlint does not export this type. */
+export type RestrictedImportPath = Extract<
+  Extract<NonNullable<DummyRuleMap['no-restricted-imports']>, readonly unknown[]>[1],
+  { name: string }
+>
 
 /**
  * `no-restricted-imports` paths config to ensure zod is being properly tree-shaken.
@@ -10,7 +16,7 @@ export const baseRestrictedImportPaths = [
     importNames: ['default'],
     message: "For proper tree-shaking, use the following syntax: import { z } from 'zod'",
   },
-] as const
+] satisfies RestrictedImportPath[]
 
 export const josephmcgOxlintConfigBase = defineConfig({
   plugins: ['eslint', 'typescript', 'unicorn', 'oxc', 'promise', 'import'],
